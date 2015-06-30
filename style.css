@@ -79,5 +79,41 @@ color: black;
 background-color: #888;
 }
 
+#media_div
+{
+position: absolute;
+background-color: red;
+height: 20%;
+width: 20%;
+}
+
+#media_div ul
+{
+width: 100%;
+height: 99%;
+margin-top: 1%;
+background-color: yellow;
+}
+
+#media_div li
+{
+width: 20%;
+height: 100%;
+background-color: blue;
+display: inline-block;
+}
+
+#media_div a
+{
+list-style-type: none;
+}
+
+.media_item
+{
+width: 100%;
+height: 100%;
+}
+
+
 
 
