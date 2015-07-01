@@ -1,0 +1,12 @@
+PHASE:
+	1. Build front end
+		a. Create logo Anderson
+		b. Build pages Jared, Rondell, Anderson, Darrien, Rei, Kristan
+		c. Source media Justin, Rondell 
+
+	2. Complete back end
+		a. Sayaad, Kristan, Jared, Darrien
+
+	3. Integr8 front end w/ back end
+		a. Again, sayaad
+	
