@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 1)What we are about
 2) Our Team 
 3) Work we have done
+=======
+1) What we are about
+2) Who we are
+3) Work we have done
+4) Our Team 
+>>>>>>> b67829d6872f7c2d08217894c1459562f63cf7ce
