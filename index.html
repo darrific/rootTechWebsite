@@ -85,11 +85,25 @@
 		</div>
 <!-- LOGIN BOX -->
 	<div id="login_box">
-		<a href="#" class="signup">Sign Up</a>
+		<a href="#" id="signuplink" class="signup">Sign Up</a>
 		 | 
 		<a href="#" id="loginlink" class="login">Login</a>
 	</div>
 	
+	<div id="signuplayer">
+		<div id="blur" class="animated fadeIn"></div>
+		<div id="login_back"></div>
+		<div id="login_text">
+			<h1>Fill In The Required Information</h1>
+				<form id="loginboxsize"> 
+	 		</br>	 			
+	        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Username" name="usernamebox"/> </br> </center>
+	 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
+	 		<center><input class="loginhovercolor, loginboxbutton" id="signupclickbox" type="submit" value="Sign Up"> </br></center>
+	        </form>
+	    </div>
+	</div>
+
 	<div id="loginlayer">
 		<div id="blur" class="animated fadeIn"></div>
 		<div id="login_back"></div>
@@ -127,6 +141,18 @@
 		        $("#loginlayer").fadeOut(500);
 		        $("#logo_div").fadeIn(2000);
 		        $("#menu_div").fadeIn(2000);		        
+		    });
+
+		    $("#signuplink").click(function(){
+				$("#logo_div").fadeOut(100);
+				$("#menu_div").fadeOut(100);				
+				$("#signuplayer").fadeIn(1000);
+			});  
+
+		    $('#signupclickbox').click(function () {		       
+		        $("#signuplayer").fadeOut(500);
+		        $("#logo_div").fadeIn(2000);
+		        $("#menu_div").fadeIn(2000);
 		    });
 		});
 
