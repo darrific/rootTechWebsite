@@ -26,11 +26,11 @@ z-index: 10;
 position: absolute;
 width: 40%;
 left: 30%;	
-top: 30%;
-transform: translate(-30%, -30%);
+top: 20%;
+transform: translate(-20%, -30%);
 text-align: center;
-font-size: 6vw;
-font-family: bebasregular;
+font-size: 9vw;
+font-family: bebasbold;
 z-index: 1;
 color: #fff ;
 }
@@ -112,6 +112,7 @@ list-style-type: none;
 margin-top: 1%;
 width: 75%;
 height: 75%;
+fill: #f8be78;
 }
 
 /*=========LAYER 2===========*/
@@ -132,21 +133,34 @@ font-size: 5vw;
 }
 
 /*=========About Us===========*/
+<<<<<<< HEAD
 
 #banner
+=======
+#background_about
+>>>>>>> c55379ce7629838f70cad41d2bb342102b0e7383
 {
-position: absolute;	
+position: absolute;
 width: 100%;
-height: 20%;
-background-color: red;
-color: black;
-font-family: simplifica;
-text-align: center;
-font-size: 5vw;
+height: 100%;
+background-color: #1c1e38;
 }
 
-#about
+#roottech_about
 {
+position: absolute;
+width: 35%;
+height: 40%;
+margin-top: 3%;
+margin-left: 5%;
+font-size: 8vw;
+font-family: bebasregular;
+color: #fff;
+}
+
+#about_text
+{
+<<<<<<< HEAD
 margin-top: 2%;
 }
 
@@ -157,4 +171,15 @@ height: 100%;
 width: 100%;
 z-index: -10;
 background-color: #1c1e38;	
+=======
+position: absolute;
+width: 50%;
+height: 40%;
+background-color: #777;
+margin-top: 20%;
+margin-left: 5%;
+font-size: 5vw;
+color: red;
+font-family: neue;
+>>>>>>> c55379ce7629838f70cad41d2bb342102b0e7383
 }
