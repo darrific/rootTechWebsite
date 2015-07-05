@@ -133,12 +133,8 @@ font-size: 5vw;
 }
 
 /*=========About Us===========*/
-<<<<<<< HEAD
 
-#banner
-=======
 #background_about
->>>>>>> c55379ce7629838f70cad41d2bb342102b0e7383
 {
 position: absolute;
 width: 100%;
@@ -160,8 +156,14 @@ color: #fff;
 
 #about_text
 {
-<<<<<<< HEAD
-margin-top: 2%;
+position: absolute;
+width: 50%;
+height: 40%;
+margin-top: 25%;
+margin-left: 5%;
+background-color: #999;
+font-size: 4vw;
+font-family: neue;
 }
 
 #background_1
@@ -171,7 +173,6 @@ height: 100%;
 width: 100%;
 z-index: -10;
 background-color: #1c1e38;	
-=======
 position: absolute;
 width: 50%;
 height: 40%;
@@ -181,5 +182,4 @@ margin-left: 5%;
 font-size: 5vw;
 color: red;
 font-family: neue;
->>>>>>> c55379ce7629838f70cad41d2bb342102b0e7383
 }
