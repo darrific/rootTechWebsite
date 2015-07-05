@@ -83,24 +83,51 @@
 				</ul>
 			</div>
 		</div>
-		<div id="layer_2">
-			<div id="booking"><h1>ERROR 404: Randalf Not Found</h1></div>
-			<div id="exit"><a href="#">EXIT</a></div>	
+<!-- LOGIN BOX -->
+	<div id="login_box">
+		<a href="#" class="signup">Sign Up</a>
+		 | 
+		<a href="#" id="loginlink" class="login">Login</a>
+	</div>
+	
+	<div id="loginlayer">
+		<div id="blur" class="animated fadeIn"></div>
+		<div id="login_back"></div>
+		<div id="login_text">
+			<h1>Enter Your Account Information</h1>
+				<form id="loginboxsize"> 
+	 		</br>	 			
+	        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Username" name="usernamebox"/> </br> </center>
+	 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
+	 		<center><input class="loginhovercolor, loginboxbutton" id="loginclickbox" type="submit" value="Login"> </br></center>
+	        </form>
 		</div>
-		<div id="layer_3"></div>
+	</div>
 </body>
 
 <footer>
 	<script> //JAVASCRIPT- this makes the buttons do stuff
 		$(document).ready(function(){
-			$("#motto").fadeIn().delay(2).fadeOut();// Actual values are: 1k,2k,1k
-			$("#logo_div").delay().fadeIn();// Actual values are: 4.1k,1.5k
-			$("#menu_div").delay().fadeIn();// Actual values are: 4.1k,1k
+			$("#motto").fadeIn(1000).delay(2000).fadeOut(1000);// Actual values are: 1k,2k,1k
+			$("#logo_div").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
+			$("#menu_div").delay(4100).fadeIn(1000);// Actual values are: 4.1k,1k
 
 			$("#bookings").click(function(){
 				$("#layer_1").css('display','none');
 				$("#layer_2").fadeIn(1000);
 			});
+
+			$("#loginlink").click(function(){
+				$("#logo_div").fadeOut(100);
+				$("#menu_div").fadeOut(100);				
+				$("#loginlayer").fadeIn(1000);
+			});  
+
+		    $('#loginclickbox').click(function () {		       
+		        $("#loginlayer").fadeOut(500);
+		        $("#logo_div").fadeIn(2000);
+		        $("#menu_div").fadeIn(2000);		        
+		    });
 		});
 
 	</script>
