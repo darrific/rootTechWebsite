@@ -158,12 +158,19 @@ color: #fff;
 {
 position: absolute;
 width: 50%;
-height: 40%;
-margin-top: 25%;
+height: 37%;
+margin-top: 21%;
 margin-left: 5%;
 background-color: #999;
 font-size: 4vw;
 font-family: neue;
+padding-left: 2% ;
+border: 2px solid  ;
+border-radius: 5px;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
 }
 
 #background_1
