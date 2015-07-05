@@ -10,7 +10,7 @@
 <title>Root Tech</title>
 
 <body>
-	<div id="layer1">
+	<div id="layer_1">
 		<div id="background"></div>
 		<div id="logo_div" class="animated fadeInUp">Root Technologies</div>
 		<div id="menu_div">
@@ -35,36 +35,6 @@
 			c-52.298,0-66.569,34.438-66.569,82.175v35.413h-35.885V306h35.885v176.617H317.739L317.739,482.617z"/>
 	</g>
 </g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
 </svg>
 </a></li>
 				<li><a href="#"><?xml version="1.0" encoding="iso-8859-1"?>
@@ -87,36 +57,6 @@
 			S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
 	</g>
 </g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
 </svg>
 </a></li>
 				<li><a href="#"><?xml version="1.0" encoding="iso-8859-1"?>
@@ -137,41 +77,47 @@
 		c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223
 		C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"/>
 </g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
 </svg>
 </a></li>
 			</ul>
 		</div>
 	</div>
+	
+<!-- LOGIN BOX -->
+	<div id="login_box">
+		<a href="#" class="signup">Sign Up</a>
+		 | 
+		<a href="#" id="loginlink" class="login">Login</a>
+	</div>
+
+	<div id="signuplayer">
+		<div id="blur" class="animated fadeIn"></div>
+		<div id="login_back"></div>
+		<div id="login_text">
+			<h1>Fill In The Required Information</h1>
+				<form id="loginboxsize"> 
+	 		</br>	 			
+	        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Username" name="usernamebox"/> </br> </center>
+	 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
+	 		<center><input class="loginhovercolor, loginboxbutton" id="loginclickbox" type="submit" value="Sign Up"> </br></center>
+	        </form>
+	    </div>
+	</div>
+
+	<div id="loginlayer">
+		<div id="blur" class="animated fadeIn"></div>
+		<div id="login_back"></div>
+		<div id="login_text">
+			<h1>Enter Your Account Information</h1>
+				<form id="loginboxsize"> 
+	 		</br>	 			
+	        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Username" name="usernamebox"/> </br> </center>
+	 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
+	 		<center><input class="loginhovercolor, loginboxbutton" id="loginclickbox" type="submit" value="Login"> </br></center>
+	        </form>
+		</div>
+	</div>
+
 	<div id="layer_2">
 		<div id="booking"><h1>GET REKT JOSEF</h1></div>
 	</div>
@@ -181,9 +127,20 @@
 	<script>
 		$(document).ready(function(){
 			$("#bookings").click(function(){
-				$("#layer1").css('display','none');
+				$("#layer_1").css('display','none');
 				$("#layer_2").fadeIn(1000);
 			});
+
+			$("#loginlink").click(function(){
+				$("#logo_div").fadeOut(100);
+				$("#menu_div").fadeOut(100);				
+				$("#loginlayer").fadeIn(1000);
+			});    		        
+		    $('#loginclickbox').click(function () {		       
+		        $("#loginlayer").fadeOut(500);
+		        $("#logo_div").fadeIn(2000);
+		        $("#menu_div").fadeIn(2000);		        
+		    });
 		});
 	</script>
 </footer>
