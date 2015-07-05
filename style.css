@@ -2,22 +2,15 @@
 {
 margin: 0;
 padding: 0;
-overflow:hidden;
-list-style-type: none;
-text-decoration: none;
 }
-
-/*=========INDEX===========*/
-
 
 #background
 {
 position: absolute;
 width: 100%;
-height: 100%;;
+height: 100%;
 z-index: -10;
 background: -webkit-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
-
 }
 
 #layer_1
@@ -38,7 +31,7 @@ text-align: center;
 font-size: 9vw;
 font-family: bebasbold;
 z-index: 1;
-color: #fff;
+color: #fff ;
 display: none;
 }
 
@@ -139,7 +132,6 @@ fill: #f8be78;
 
 #layer_2
 {
-position: absolute;
 width: 100%;
 height: 100%;
 display: none;
@@ -147,27 +139,10 @@ display: none;
 
 #booking
 {
-position: absolute;
 color: red;
-width: 100%;
-height: 10%;
-top: 50%;
-left: 50%;
-transform: translate(-50% , -50%);
-font-size: 2vw;
-text-align: center;
-}
-
-#exit
-{
-padding: 2%;
-font-size: 3vw;
-margin-left: 10%;
-}
-
-#exit a
-{
-color: #fff;
+width: 50%;
+height: 20%;
+font-size: 5vw;
 }
 
 /*=========LOGIN BOX===========*/
@@ -177,7 +152,7 @@ color: #fff;
 position:absolute;
 right: 0%;
 width:20%;
-height: 5%;
+height: 4%;
 margin-top: 1%;
 margin-right: 1%;
 text-align: right;
@@ -211,12 +186,6 @@ color: #fff;
 #login_box a
 {
 text-decoration: none;
-}
-
-#hover_arrow
-{
-position: absolute;
-right: 5%;
 }
 
 #blur
@@ -382,6 +351,10 @@ font-family: neue;
 padding-left: 2% ;
 border: 2px solid  ;
 border-radius: 5px;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
 }
 
 #background_1
