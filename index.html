@@ -82,41 +82,41 @@
 				</a></li>
 				</ul>
 			</div>
-		</div>
-<!-- LOGIN BOX -->
-	<div id="login_box">
-		<a href="#" id="signuplink" class="signup">Sign Up</a>
-		 | 
-		<a href="#" id="loginlink" class="login">Login</a>
-	</div>
-	
-	<div id="signuplayer">
-		<div id="blur" class="animated fadeIn"></div>
-		<div id="login_back"></div>
-		<div id="login_text">
-			<h1>Fill In The Required Information</h1>
-				<form id="loginboxsize"> 
-	 		</br>	 			
-	        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Username" name="usernamebox"/> </br> </center>
-	 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
-	 		<center><input class="loginhovercolor, loginboxbutton" id="signupclickbox" type="submit" value="Sign Up"> </br></center>
-	        </form>
-	    </div>
-	</div>
+			<!-- LOGIN BOX -->
+			<div id="login_box">
+				<a href="#" id="signuplink" class="signup">Sign Up</a>
+				 | 
+				<a href="#" id="loginlink" class="login">Login</a>
+			</div>
+			
+			<div id="signuplayer">
+				<div id="blur" class="animated fadeIn"></div>
+				<div id="login_back"></div>
+				<div id="login_text">
+					<h1>Fill In The Required Information</h1>
+						<form id="loginboxsize"> 
+			 		</br>	 			
+			        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Username" name="usernamebox"/> </br> </center>
+			 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
+			 		<center><input class="loginhovercolor, loginboxbutton" id="signupclickbox" type="submit" value="Sign Up"> </br></center>
+			        </form>
+			    </div>
+			</div>
 
-	<div id="loginlayer">
-		<div id="blur" class="animated fadeIn"></div>
-		<div id="login_back"></div>
-		<div id="login_text">
-			<h1>Enter Your Account Information</h1>
-				<form id="loginboxsize"> 
-	 		</br>	 			
-	        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Username" name="usernamebox"/> </br> </center>
-	 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
-	 		<center><input class="loginhovercolor, loginboxbutton" id="loginclickbox" type="submit" value="Login"> </br></center>
-	        </form>
+			<div id="loginlayer">
+				<div id="blur" class="animated fadeIn"></div>
+				<div id="login_back"></div>
+				<div id="login_text">
+					<h1>Enter Your Account Information</h1>
+						<form id="loginboxsize"> 
+			 		</br>	 			
+			        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Username" name="usernamebox"/> </br> </center>
+			 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
+			 		<center><input class="loginhovercolor, loginboxbutton" id="loginclickbox" type="submit" value="Login"> </br></center>
+			        </form>
+				</div>
+			</div>
 		</div>
-	</div>
 </body>
 
 <footer>
@@ -125,6 +125,8 @@
 			$("#motto").fadeIn(1000).delay(2000).fadeOut(1000);// Actual values are: 1k,2k,1k
 			$("#logo_div").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
 			$("#menu_div").delay(4100).fadeIn(1000);// Actual values are: 4.1k,1k
+			$("#login_box").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1k
+			$("#media_div").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1k
 
 			$("#bookings").click(function(){
 				$("#layer_1").css('display','none');
@@ -133,26 +135,30 @@
 
 			$("#loginlink").click(function(){
 				$("#logo_div").fadeOut(100);
-				$("#menu_div").fadeOut(100);				
+				$("#menu_div").fadeOut(100);
+				$("#media_div").fadeOut(100);
 				$("#loginlayer").fadeIn(1000);
 			});  
 
-		    $('#loginclickbox').click(function () {		       
-		        $("#loginlayer").fadeOut(500);
-		        $("#logo_div").fadeIn(2000);
-		        $("#menu_div").fadeIn(2000);		        
+		    $('#loginclickbox').click(function () {
+		        $("#loginlayer").fadeOut(800);
+		        $("#logo_div").delay(800).fadeIn(1000);
+		        $("#menu_div").delay(800).fadeIn(1000);
+		        $("#media_div").delay(800).fadeIn(1000);
 		    });
 
 		    $("#signuplink").click(function(){
 				$("#logo_div").fadeOut(100);
-				$("#menu_div").fadeOut(100);				
+				$("#menu_div").fadeOut(100);
+				$("#media_div").fadeOut(100);
 				$("#signuplayer").fadeIn(1000);
 			});  
 
-		    $('#signupclickbox').click(function () {		       
-		        $("#signuplayer").fadeOut(500);
-		        $("#logo_div").fadeIn(2000);
-		        $("#menu_div").fadeIn(2000);
+		    $('#signupclickbox').click(function () {
+		   		$("#signuplayer").fadeOut(800);
+		        $("#logo_div").delay(800).fadeIn(2000);
+		        $("#menu_div").delay(800).fadeIn(2000);
+		        $("#media_div").delay(800).fadeIn(1000);
 		    });
 		});
 
