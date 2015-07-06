@@ -12,6 +12,10 @@
 <body>
 	<div id="layer_1">
 		<div id="background"></div>
+		<audio id="allahuakbar">
+			<source src="media/allahuakbar.mp3" controls></source>
+			Your browser isn't invited for super fun audio time.
+			</audio>
 		<div id="logo_div" class="animated fadeInUp">Root Technologies</div>
 		<div id="motto">Create,Collaborate,Conquer.</div>
 		<div id="menu_div">
@@ -160,6 +164,12 @@
 		        $("#menu_div").delay(800).fadeIn(2000);
 		        $("#media_div").delay(800).fadeIn(1000);
 		    });
+
+		    var logohover = $("#allahuakbar")[0];
+			$("#logo_div")
+			.mouseenter(function() {
+			allahuakbar.play();
+			});
 		});
 
 	</script>
