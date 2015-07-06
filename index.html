@@ -13,9 +13,21 @@
 	<div id="layer_1">
 		<div id="background"></div>
 		<audio id="allahuakbar">
-			<source src="media/allahuakbar.mp3" controls></source>
+			<source src="media/allahuakbar.mp3"></source>
 			Your browser isn't invited for super fun audio time.
-			</audio>
+		</audio>
+		<audio id="doit">
+			<source src="media/doit.mp3"></source>
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<audio id="justdoit">
+			<source src="media/justdoit.mp3"></source>
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<audio id="yesyoucan">
+			<source src="media/yesyoucan.mp3"></source>
+			Your browser isn't invited for super fun audio time.
+		</audio>
 		<div id="logo_div" class="animated fadeInUp">Root Technologies</div>
 		<div id="motto">Create,Collaborate,Conquer.</div>
 		<div id="menu_div">
@@ -169,6 +181,30 @@
 			$("#logo_div")
 			.mouseenter(function() {
 			allahuakbar.play();
+			});
+
+			var signuphover = $("#doit")[0];
+			$("#signuplink")
+			.mouseenter(function() {
+			doit.play();
+			});
+
+			var loginhover = $("#justdoit")[0];
+			$("#loginlink")
+			.mouseenter(function() {
+			justdoit.play();
+			});
+
+			var loginhover = $("#yesyoucan")[0];
+			$("#loginclickbox")
+			.mouseenter(function() {
+			yesyoucan.play();
+			});
+
+			var loginhover = $("#yesyoucan")[0];
+			$("#signupclickbox")
+			.mouseenter(function() {
+			yesyoucan.play();
 			});
 		});
 
