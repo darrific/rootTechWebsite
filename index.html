@@ -16,21 +16,8 @@
 			<source src="media/allahuakbar.mp3"></source>
 			Your browser isn't invited for super fun audio time.
 		</audio>
-		<audio id="doit">
-			<source src="media/doit.mp3"></source>
-			Your browser isn't invited for super fun audio time.
-		</audio>
-		<audio id="justdoit">
-			<source src="media/justdoit.mp3"></source>
-			Your browser isn't invited for super fun audio time.
-		</audio>
-		<audio id="yesyoucan">
-			<source src="media/yesyoucan.mp3"></source>
-			Your browser isn't invited for super fun audio time.
-		</audio>
-
 		<div id="logo_div" class="animated fadeInUp">Root Technologies</div>
-		<div id="motto">Create,Collaborate,Conquer.</div>
+		<div id="motto">Our Inspiring Motto</div>
 		<div id="menu_div">
 			<ul>
 				<li><a href="#" id="bookings"><div class="fix1">BOOKINGS</div></a></li>
@@ -99,41 +86,6 @@
 				</a></li>
 				</ul>
 			</div>
-			<!-- LOGIN BOX -->
-			<div id="login_box">
-				<a href="#" id="signuplink" class="signup">Sign Up</a>
-				 | 
-				<a href="#" id="loginlink" class="login">Login</a>
-			</div>
-			
-			<div id="signuplayer">
-				<div id="blur" class="animated fadeIn"></div>
-				<div id="login_back"></div>
-				<div id="login_text">
-					<h1>Fill In The Required Information</h1>
-						<form id="loginboxsize"> 
-			 		</br>	 			
-			        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Email" name="usernamebox"/> </br> </center>
-			 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
-			 		<center><input class="loginhovercolor, loginboxbutton" id="signupclickbox" type="submit" value="Sign Up"> </br></center>
-			        </form>
-			    </div>
-			</div>
-
-			<div id="loginlayer">
-				<div id="blur" class="animated fadeIn"></div>
-				<div id="login_back"></div>
-				<div id="login_text">
-					<h1>Enter Your Account Information</h1>
-						<form id="loginboxsize"> 
-			 		</br>	 			
-			        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Email" name="usernamebox"/> </br> </center>
-			 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
-			 		<center><input class="loginhovercolor, loginboxbutton" id="loginclickbox" type="submit" value="Login"> </br></center>
-			        </form>
-				</div>
-			</div>
-		</div>
 		<div id="mute">
 			<a id="mute_link" href="#"><?xml version="1.0" encoding="iso-8859-1"?>
 			<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -155,11 +107,10 @@
 <footer>
 	<script> //JAVASCRIPT- this makes the buttons do stuff
 		$(document).ready(function(){
-			$("#motto").fadeIn().delay(200).fadeOut();// Actual values are: 1k,2k,1k
-			$("#logo_div").delay(200).fadeIn();// Actual values are: 4.1k,1.5k
-			$("#menu_div").delay(200).fadeIn();// Actual values are: 4.1k,1k
-			$("#login_box").delay().fadeIn();// Actual values are: 4.1k,1k
-			$("#media_div").delay().fadeIn();// Actual values are: 4.1k,1k
+			$("#motto").fadeIn(1000).delay(1000).fadeOut(1000);// Actual values are: 1k,2k,1k
+			$("#logo_div").delay(3000).fadeIn(1500);// Actual values are: 4.1k,1.5k
+			$("#menu_div").delay(3000).fadeIn(1500);// Actual values are: 4.1k,1k
+			$("#media_div").delay(3000).fadeIn(1500);// Actual values are: 4.1k,1k
 			$(".mute_icon").delay().fadeIn();
 
 			$("#bookings").click(function(){
@@ -171,27 +122,12 @@
 				$("#logo_div").fadeOut(100);
 				$("#menu_div").fadeOut(100);
 				$("#media_div").fadeOut(100);
-				$("#loginlayer").fadeIn(1000);
 			});  
 
 		    $('#loginclickbox').click(function () {
 		        $("#loginlayer").fadeOut(800);
 		        $("#logo_div").delay(800).fadeIn(1000);
 		        $("#menu_div").delay(800).fadeIn(1000);
-		        $("#media_div").delay(800).fadeIn(1000);
-		    });
-
-		    $("#signuplink").click(function(){
-				$("#logo_div").fadeOut(100);
-				$("#menu_div").fadeOut(100);
-				$("#media_div").fadeOut(100);
-				$("#signuplayer").fadeIn(1000);
-			});  
-
-		    $('#signupclickbox').click(function () {
-		   		$("#signuplayer").fadeOut(800);
-		        $("#logo_div").delay(800).fadeIn(2000);
-		        $("#menu_div").delay(800).fadeIn(2000);
 		        $("#media_div").delay(800).fadeIn(1000);
 		    });
 
@@ -208,48 +144,16 @@
 					{
 						$(".mute_icon").css('fill','red');
 						document.getElementById('allahuakbar').muted = true;
-						document.getElementById('doit').muted = true;
-						document.getElementById('justdoit').muted = true;
-						document.getElementById('yesyoucan').muted = true;
-
 						click_count2 = click_count;
 					}
 					else 
 					{
 						$(".mute_icon").css('fill','#f8be78');
-						document.getElementById('allahuakbar').muted = true;
-						document.getElementById('doit').muted = false;
-						document.getElementById('justdoit').muted = false;
-						document.getElementById('yesyoucan').muted = false;
+						document.getElementById('allahuakbar').muted = false;
 						click_count = 1;
 						click_count2 = 0;	
 					}
-				});
-
-			var signuphover = $("#doit")[0];
-			$("#signuplink")
-			.mouseenter(function() {
-			doit.play();
-			});
-
-			var loginhover = $("#justdoit")[0];
-			$("#loginlink")
-			.mouseenter(function() {
-			justdoit.play();
-			});
-
-			var loginhover = $("#yesyoucan")[0];
-			$("#loginclickbox")
-			.mouseenter(function() {
-			yesyoucan.play();
-			});
-
-			var loginhover = $("#yesyoucan")[0];
-			$("#signupclickbox")
-			.mouseenter(function() {
-			yesyoucan.play();
-			});
-		
+				});		
 		});	
 
 		</script>
