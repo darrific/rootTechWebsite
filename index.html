@@ -10,11 +10,21 @@
 <title>Root Tech</title>
 
 <body>
+
+	<!-- ++++++++LAYER 1+++++++ -->
 	<div id="layer_1">
 		<div id="background"></div>
 		<audio id="allahuakbar">
 			<source src="media/allahuakbar.mp3"></source>
-			Your browser isn't invited for super fun audio time.
+			Your browser is deaf. GET REKT!.
+		</audio>
+		<audio id="doit" class="index_audio">
+			<source src="media/doit.mp3"></source>
+			Your browser is deaf, GET REKT!
+		</audio>
+		<audio id="justdoit" class="index_audio">
+			<source src="media/justdoit.mp3"></source>
+			Your browser is deaf, GET REKT!
 		</audio>
 		<div id="logo_div" class="animated fadeInUp">Root Technologies</div>
 		<div id="motto">Our Inspiring Motto</div>
@@ -101,27 +111,73 @@
 				</g>
 			</g>
 			</svg></a>
+
+		<!-- LOGIN BOX -->
+		<!--
+			<div id="login_box">
+				<a href="#" id="signuplink" class="signup">Sign Up</a>
+				 | 
+				<a href="#" id="loginlink" class="login">Login</a>
+			</div>
+			
+			<div id="signuplayer">
+				<div id="blur" class="animated fadeIn"></div>
+				<div id="login_back"></div>
+				<div id="login_text">
+					<h1>Fill In The Required Information</h1>
+						<form id="loginboxsize"> 
+			 		</br>	 			
+			        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Email" name="usernamebox"/> </br> </center>
+			 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
+			 		<center><input class="loginhovercolor, loginboxbutton" id="signupclickbox" type="submit" value="Sign Up"> </br></center>
+			        </form>
+			    </div>
+			</div>
+
+			<div id="loginlayer">
+				<div id="blur" class="animated fadeIn"></div>
+				<div id="login_back"></div>
+				<div id="login_text">
+					<h1>Enter Your Account Information</h1>
+						<form id="loginboxsize"> 
+			 		</br>	 			
+			        <center><input class="loginbox_entity" type="text" id="usernamebox" value="" placeholder="Email" name="usernamebox"/> </br> </center>
+			 		<center><input class="loginbox_entity" type="password" id="passwordbox" value="" placeholder="Password" name="passwordbox"/> </br> </br></center>
+			 		<center><input class="loginhovercolor, loginboxbutton" id="loginclickbox" type="submit" value="Login"> </br></center>
+			        </form>
+				</div>
+			</div>
 		</div>
+	-->
+	</div>
+
+	<!-- ++++++++LAYER 2+++++++ -->
+
+	<div id="layer_2_2">
+		
+	</div>
 </body>
 
 <footer>
 	<script> //JAVASCRIPT- this makes the buttons do stuff
 		$(document).ready(function(){
 			$("#motto").fadeIn(1000).delay(1000).fadeOut(1000);// Actual values are: 1k,2k,1k
-			$("#logo_div").delay(3000).fadeIn(1500);// Actual values are: 4.1k,1.5k
-			$("#menu_div").delay(3000).fadeIn(1500);// Actual values are: 4.1k,1k
-			$("#media_div").delay(3000).fadeIn(1500);// Actual values are: 4.1k,1k
-			$(".mute_icon").delay().fadeIn();
+			$("#logo_div").delay(4100).fadeIn(1000);// Actual values are: 4.1k,1k
+			$("#menu_div").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
+			$("#media_div").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
+			$(".mute_icon").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
+		//	$("#login_box").delay(4600).fadeIn(1000);// Actual values are: 4.6k,1k
 
 			$("#bookings").click(function(){
 				$("#layer_1").css('display','none');
 				$("#layer_2").fadeIn(1000);
 			});
-
+<!--
 			$("#loginlink").click(function(){
 				$("#logo_div").fadeOut(100);
 				$("#menu_div").fadeOut(100);
 				$("#media_div").fadeOut(100);
+				$("#loginlayer").fadeIn(1000);
 			});  
 
 		    $('#loginclickbox').click(function () {
@@ -129,7 +185,23 @@
 		        $("#logo_div").delay(800).fadeIn(1000);
 		        $("#menu_div").delay(800).fadeIn(1000);
 		        $("#media_div").delay(800).fadeIn(1000);
+		        $("#motto").css('display','none');
 		    });
+
+		    $("#signuplink").click(function(){
+				$("#logo_div").fadeOut(100);
+				$("#menu_div").fadeOut(100);
+				$("#media_div").fadeOut(100);
+				$("#signuplayer").fadeIn(1000);
+			});  
+
+		    $('#signupclickbox').click(function () {
+		   		$("#signuplayer").fadeOut(800);
+		        $("#logo_div").delay(800).fadeIn(2000);
+		        $("#menu_div").delay(800).fadeIn(2000);
+		        $("#media_div").delay(800).fadeIn(1000);
+		        $("#motto").css('display','none');
+//-->		        
 
 		    var logohover = $("#allahuakbar")[0];
 			$("#logo_div")
