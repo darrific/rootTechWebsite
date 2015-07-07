@@ -122,12 +122,43 @@ display: inline-block;
 list-style-type: none;
 }
 
-.media_item
+.media_item1
 {
 margin-top: 1%;
 width: 75%;
 height: 75%;
 fill: #f8be78;
+}
+
+.media_item1:hover
+{
+fill: #3b5998;
+}
+
+.media_item2
+{
+margin-top: 1%;
+width: 75%;
+height: 75%;
+fill: #f8be78;
+}
+
+.media_item2:hover
+{
+fill: #4099ff;
+}
+
+.media_item3
+{
+margin-top: 1%;
+width: 75%;
+height: 75%;
+fill: #f8be78;
+}
+
+.media_item3:hover
+{
+fill: #64D448;
 }
 
 #allahuakbar

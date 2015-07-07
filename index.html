@@ -31,7 +31,7 @@
 		<div id="menu_div">
 			<ul>
 				<li><a href="#" id="bookings"><div class="fix1">BOOKINGS</div></a></li>
-				<li><a href="#"><div class="fix1">ABOUT US</div></a></li>
+				<li><a href="#" id="aboutus"><div class="fix1">ABOUT US</div></a></li>
 			</ul>
 		</div>
 		<div id="media_div"> <!-- THese ar the svgs-->
@@ -39,7 +39,7 @@
 				<li><a href="#"><?xml version="1.0" encoding="iso-8859-1"?>
 				<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-				<svg class="media_item" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				<svg class="media_item1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
 				<g>
 					<g>
@@ -55,7 +55,7 @@
 				<li><a href="#"><?xml version="1.0" encoding="iso-8859-1"?>
 				<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-				<svg class="media_item" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				<svg class="media_item2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
 				<g>
 					<g>
@@ -77,7 +77,7 @@
 				<li><a href="#"><?xml version="1.0" encoding="iso-8859-1"?>
 				<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-				<svg class="media_item" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				<svg class="media_item3" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 width="90px" height="90px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
 				<g>
 					<path id="WhatsApp" d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522
@@ -166,47 +166,28 @@
 			$("#menu_div").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
 			$("#media_div").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
 			$(".mute_icon").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
-		//	$("#login_box").delay(4600).fadeIn(1000);// Actual values are: 4.6k,1k
 
 			$("#bookings").click(function(){
 				$("#layer_1").css('display','none');
 				$("#layer_2").fadeIn(1000);
 			});
-<!--
-			$("#loginlink").click(function(){
-				$("#logo_div").fadeOut(100);
-				$("#menu_div").fadeOut(100);
-				$("#media_div").fadeOut(100);
-				$("#loginlayer").fadeIn(1000);
-			});  
-
-		    $('#loginclickbox').click(function () {
-		        $("#loginlayer").fadeOut(800);
-		        $("#logo_div").delay(800).fadeIn(1000);
-		        $("#menu_div").delay(800).fadeIn(1000);
-		        $("#media_div").delay(800).fadeIn(1000);
-		        $("#motto").css('display','none');
-		    });
-
-		    $("#signuplink").click(function(){
-				$("#logo_div").fadeOut(100);
-				$("#menu_div").fadeOut(100);
-				$("#media_div").fadeOut(100);
-				$("#signuplayer").fadeIn(1000);
-			});  
-
-		    $('#signupclickbox').click(function () {
-		   		$("#signuplayer").fadeOut(800);
-		        $("#logo_div").delay(800).fadeIn(2000);
-		        $("#menu_div").delay(800).fadeIn(2000);
-		        $("#media_div").delay(800).fadeIn(1000);
-		        $("#motto").css('display','none');
-//-->		        
 
 		    var logohover = $("#allahuakbar")[0];
 			$("#logo_div")
 			.mouseenter(function() {
 			allahuakbar.play();
+			});
+
+			var bookingshover = $("#doit")[0];
+			$("#bookings")
+			.mouseenter(function() {
+			doit.play();
+			});
+
+			var aboutushover = $("justdoit")[0];
+			$("#aboutus")
+			.mouseenter(function() {
+			justdoit.play();
 			});
 
 			var click_count = 1;
@@ -216,12 +197,16 @@
 					{
 						$(".mute_icon").css('fill','red');
 						document.getElementById('allahuakbar').muted = true;
+						document.getElementById('doit').muted = true;
+						document.getElementById('justdoit').muted = true;
 						click_count2 = click_count;
 					}
 					else 
 					{
 						$(".mute_icon").css('fill','#f8be78');
 						document.getElementById('allahuakbar').muted = false;
+						document.getElementById('doit').muted = false;
+						document.getElementById('justdoit').muted = false;
 						click_count = 1;
 						click_count2 = 0;	
 					}
