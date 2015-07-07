@@ -13,24 +13,12 @@
 
 	<!-- ++++++++LAYER 1+++++++ -->
 	<div id="layer_1">
-		<div id="background"></div>
-		<audio id="allahuakbar">
-			<source src="media/allahuakbar.mp3"></source>
-			Your browser is deaf. GET REKT!.
-		</audio>
-		<audio id="doit" class="index_audio">
-			<source src="media/doit.mp3"></source>
-			Your browser is deaf, GET REKT!
-		</audio>
-		<audio id="justdoit" class="index_audio">
-			<source src="media/justdoit.mp3"></source>
-			Your browser is deaf, GET REKT!
-		</audio>
+		<div id="background"></div>		
 		<div id="logo_div" class="animated fadeInUp">Root Technologies</div>
-		<div id="motto">Our Inspiring Motto</div>
+		<div id="motto">COOLTEXT WAS NOT USED IN THE MAKING OF THIS SITE</div>
 		<div id="menu_div">
 			<ul>
-				<li><a href="bookings.html" id="bookings"><div class="fix1">BOOKINGS</div></a></li>
+				<li><a href="#" id="services"><div class="fix1">BOOKINGS</div></a></li>
 				<li><a href="#" id="aboutus"><div class="fix1">ABOUT US</div></a></li>
 			</ul>
 		</div>
@@ -151,37 +139,74 @@
 	-->
 	</div>
 
+	<div id="layer_2_2">
+		<div id="background_services"></div>
+
+		<?php
+		$errors = '';
+		$myemail = 'yourname@website.com';//<-----Put Your email address here.
+		if(empty($_POST['name'])  ||
+		   empty($_POST['email']) ||
+		   empty($_POST['message']))
+		{
+		    $errors .= "\n Error: all fields are required";
+		}
+		$name = $_POST['name'];
+		$email_address = $_POST['email'];
+		$message = $_POST['message'];
+		if (!preg_match(
+		"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
+		$email_address))
+		{
+		    $errors .= "\n Error: Invalid email address";
+		}
+
+		if( empty($errors))
+		{
+		$to = $myemail;
+		$email_subject = "Contact form submission: $name";
+		$email_body = "You have received a new message. ".
+		" Here are the details:\n Name: $name \n ".
+		"Email: $email_address\n Message \n $message";
+		$headers = "From: $myemail\n";
+		$headers .= "Reply-To: $email_address";
+		mail($to,$email_subject,$email_body,$headers);
+		//redirect to the 'thank you' page
+		header('Location: contact-form-thank-you.html');
+		}
+		?>
+		
+		<form id="service_form" method="post" name="contact_form"caction="contact-form-handler.php">
+		    Your Name:
+		    <input type="text" name="name">
+		    <br>
+		    Email Address:
+		    <input type="text" name="email">
+		    <br>
+		    Message:
+		    <textarea name="message"></textarea>
+		    <input type="submit" value="Submit">
+		</form>
+	</div>
 	
 </body>
 
 <footer>
 	<script> //JAVASCRIPT- this makes the buttons do stuff
 		$(document).ready(function(){
-			$("#motto").fadeIn(1000).delay(1000).fadeOut(1000);// Actual values are: 1k,2k,1k
-			$("#logo_div").delay(4100).fadeIn(1000);// Actual values are: 4.1k,1k
-			$("#menu_div").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
-			$("#media_div").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
-			$(".mute_icon").delay(4100).fadeIn(1500);// Actual values are: 4.1k,1.5k
+			$("#motto").fadeIn(100).delay(100).fadeOut(100);// Actual values are: 1k,2k,1k
+			$("#logo_div").delay(410).fadeIn(100);// Actual values are: 4.1k,1k
+			$("#menu_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
+			$("#media_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
+			$(".mute_icon").delay(441).fadeIn(150);// Actual values are: 4.1k,1.5k
 
-			
-
-		    var logohover = $("#allahuakbar")[0];
-			$("#logo_div")
-			.mouseenter(function() {
-			allahuakbar.play();
-			});
-
-			var bookingshover = $("#doit")[0];
-			$("#bookings")
-			.mouseenter(function() {
-			doit.play();
-			});
-
-			var aboutushover = $("justdoit")[0];
-			$("#aboutus")
-			.mouseenter(function() {
-			justdoit.play();
-			});
+			$("#services").click(function(){
+				$("#motto").fadeOut(100);// Actual values are: 1k,2k,1k
+				$("#logo_div").fadeOut(100);// Actual values are: 4.1k,1k
+				$("#menu_div").fadeOut(150);// Actual values are: 4.1k,1.5k
+				$("#media_div").fadeOut(150);// Actual values are: 4.1k,1.5k
+				$("#layer_2_2").fadeIn(1000);
+			});	 
 
 			var click_count = 1;
 			var click_count2 = 0;
@@ -204,7 +229,7 @@
 						click_count2 = 0;	
 					}
 				});
-			});
+			});		
 		</script>
 </footer>
 
