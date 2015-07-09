@@ -37,6 +37,12 @@ src: url(fonts/rb.otf);
 
 @font-face
 {
+font-family: furore;
+src: url(fonts/furore.otf);
+}
+
+@font-face
+{
 font-family: fraction;
 src: url(fonts/fraction.otf);
 }

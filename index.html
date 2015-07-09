@@ -11,7 +11,7 @@
 
 <body>
 
-	<!-- ++++++++LAYER 1+++++++ -->
+	<!-- ++++++++LAYER 1 Darrien and KCB+++++++ -->
 	<div id="layer_1">
 		<div id="background"></div>		
 		<div id="logo_div" class="animated fadeInUp">Root Technologies</div>
@@ -22,7 +22,7 @@
 				<li><a href="#" id="aboutus"><div class="fix1">ABOUT US</div></a></li>
 			</ul>
 		</div>
-		<div id="media_div"> <!-- THese ar the svgs-->
+		<div id="media_div"> <!-- THese are the svgs-->
 			<ul>
 				<li><a href="#"><?xml version="1.0" encoding="iso-8859-1"?>
 				<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -144,6 +144,7 @@
 
 	<!--++++++++LAYER 2 -Darrien+++++++-->
 	<div id="layer_2">
+		<div id="serviceformclick">Click here!</div>
 		<div id="fancy_text" class="text_centerX">
 			
 		</div>
@@ -157,15 +158,15 @@
 		</div>
 	</div> 
 	<!--++++++++LAYER 2 END+++++++-->
-	<!--++++++++LAYER 2_1+++++++!-->
+	<!--++++++++LAYER 2_1+++++++-->
 	<!--++++++++LAYER 2_1 END+++++++-->
-	<!--++++++++LAYER 2_2+++++++-->
+	<!--++++++++LAYER 2_2 KCB+++++++-->
 	<div id="layer_2_2">
 		<div id="background_services"></div>
 
 		<?php
 		$errors = '';
-		$myemail = 'yourname@website.com';//<-----Put Your email address here.
+		$myemail = 'roottechnologiestt@gmail.com';//<-----Put Your email address here.
 		if(empty($_POST['name'])  ||
 		   empty($_POST['email']) ||
 		   empty($_POST['message']))
@@ -197,31 +198,39 @@
 		}
 		?>
 		
-		<form id="service_form" method="post" name="contact_form"caction="contact-form-handler.php">
-		    Your Name:
-		    <input type="text" name="name">
-		    <br>
-		    Email Address:
-		    <input type="text" name="email">
-		    <br>
-		    Message:
-		    <textarea name="message"></textarea>
-		    <input type="submit" value="Submit">
-		</form>
+		<div id="service_form_back"></div>		
+			<div id="service_form">				
+				<div id="service_form_text">
+					<div id="serviceform_title">Message Us</div>
+					<p>Name</p>
+					<p>E-mail Address</p>			
+					<p>Message</p>
+				</div>
+				<form id="serviceform_boxes" method="post" name="contact_form"caction="contact-form-handler.php">					
+				    <input class="serviceform_entity" type="text" name="name" placeholder="Enter your name">
+				    <br>			    
+				    <input class="serviceform_entity" type="text" name="email" placeholder="get_rekt_noob@root.com">
+				    <br>			    
+				    <textarea class="serviceform_message" name="message" placeholder="Type your message here"></textarea>
+				    <br>
+				    <input class="serviceform_submit" type="submit" value="Submit"></div>
+				</form>					
+		</div>
 	</div>
 	<!--++++++++LAYER 2_2 END+++++++-->
 </body>
 
 <footer>
 	<script> //JAVASCRIPT- this makes the buttons do stuff
-		$(document).ready(function(){
-			
-			//LAYER_1 JS
+		
+		//LAYER_1 JS	
+		$(document).ready(function(){					
 			$("#motto").fadeIn(100).delay(100).fadeOut(100);// Actual values are: 1k,2k,1k
 			$("#logo_div").delay(410).fadeIn(100);// Actual values are: 4.1k,1k
 			$("#menu_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
 			$("#media_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
 			$(".mute_icon").delay(441).fadeIn(150);// Actual values are: 4.1k,1.5k
+			});
 
 			$("#services").click(function(){
 				$("#motto").fadeOut(100);// Actual values are: 1k,2k,1k
@@ -251,62 +260,65 @@
 				});
 			//END MUTE JS
 
-				//LAYER_2 JS
+			//LAYER_2 JS
 
-				$("#web_dev").mouseenter(function(){
-					$("#blur_on_hover_1").css('-webkit-filter','blur(5px)');
-					$("#web_dev img").css('transform','scaleX(1.2)');
-					$("#web_dev img").css('transform','scaleY(1.2)');
-				});
-				$("#web_dev").mouseleave(function(){
-					$("#blur_on_hover_1").css('-webkit-filter','blur(0px)');
-					$("#web_dev img").css('transform','scaleX(1.5)');
-					$("#web_dev img").css('transform','scaleY(1.5)');
-				});
-				
+			$("#web_dev").mouseenter(function(){
+				$("#blur_on_hover_1").css('-webkit-filter','blur(5px)');
+				$("#web_dev img").css('transform','scaleX(1.2)');
+				$("#web_dev img").css('transform','scaleY(1.2)');
+			});
+			$("#web_dev").mouseleave(function(){
+				$("#blur_on_hover_1").css('-webkit-filter','blur(0px)');
+				$("#web_dev img").css('transform','scaleX(1.5)');
+				$("#web_dev img").css('transform','scaleY(1.5)');
+			});
+			
 
-				$("#pc").mouseenter(function(){
-					$("#blur_on_hover_2").css('-webkit-filter','blur(5px)');
-					$("#pc img").css('transform','scaleX(1.2)');
-					$("#pc img").css('transform','scaleY(1.2)');	
-				});
-				$("#pc").mouseleave(function(){
-					$("#blur_on_hover_2").css('-webkit-filter','blur(0px)');
-					$("#pc img").css('transform','scaleX(1.5)');
-					$("#pc img").css('transform','scaleY(1.5)');	
-				});
-				// END LAYER_2 JS
+			$("#pc").mouseenter(function(){
+				$("#blur_on_hover_2").css('-webkit-filter','blur(5px)');
+				$("#pc img").css('transform','scaleX(1.2)');
+				$("#pc img").css('transform','scaleY(1.2)');	
+			});
+			$("#pc").mouseleave(function(){
+				$("#blur_on_hover_2").css('-webkit-filter','blur(0px)');
+				$("#pc img").css('transform','scaleX(1.5)');
+				$("#pc img").css('transform','scaleY(1.5)');	
+			});
+			// END LAYER_2 JS
 
-				//LAYER_2_1 JS
-				//END LAYER_2_1 JS
+			//LAYER_2_1 JS
+			//END LAYER_2_1 JS
 
-				//LAYER_2_2 JS
-				//END LAYER_2_2 JS
+			//LAYER_2_2 JS
+			$("#serviceformclick").click(function(){
+			$("#layer_2").fadeOut(100);// Actual values are: 1k,2k,1k
+			$("#layer_2_2").fadeIn(1000);
+			});
+			//END LAYER_2_2 JS
 
-				//LAYER_3 JS
-				//END LAYER_3 JS
+			//LAYER_3 JS
+			//END LAYER_3 JS
 
-				//LAYER_3_1 JS
-				//END LAYER_3_1 JS
+			//LAYER_3_1 JS
+			//END LAYER_3_1 JS
 
-				//LAYER_3_2 JS
-				//END LAYER_3_2 JS
+			//LAYER_3_2 JS
+			//END LAYER_3_2 JS
 
-				//LAYER_4 JS
-				//END LAYER_4 JS
+			//LAYER_4 JS
+			//END LAYER_4 JS
 
-				//LAYER_4_1 JS
-				//END LAYER_4_1 JS
+			//LAYER_4_1 JS
+			//END LAYER_4_1 JS
 
-				//LAYER_4_2 JS
-				//END LAYER_4_2 JS
+			//LAYER_4_2 JS
+			//END LAYER_4_2 JS
 
-				//LAYER_4_3 JS
-				//END LAYER_4_3 JS
+			//LAYER_4_3 JS
+			//END LAYER_4_3 JS
 
-				//LAYER_5 JS
-				//END LAYER_5 JS
-			});		
+			//LAYER_5 JS
+			//END LAYER_5 JS
 		</script>
 </footer>
 
