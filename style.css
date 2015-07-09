@@ -562,6 +562,90 @@ text-decoration: none;
 /*=========LAYER 2_2 END===========*/
 
 /*=========LAYER 3 ===========*/
+#layer_3
+{
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+#about_container
+{
+position: absolute;
+width: 80%;
+height: 40%;
+}
+
+#flowery_about_container
+{
+position: absolute;
+width: 60%;
+height: 100%;
+}
+
+#about_buttons
+{
+position: absolute;
+width: 50%;
+height: 20%;
+margin-top: 39.6%;
+}
+
+#about_buttons a 
+{
+position: absolute;
+width: 30%;
+color: white;
+background-color: #222;
+text-decoration: none;
+font-size: 3vw;
+font-family: bebasregular;
+padding: 5%;
+border-radius: 5%;
+}
+
+#about_team
+{
+position: absolute;
+margin-left: -45%;
+}
+
+#about_past
+{
+position: absolute;
+margin-left: 5%
+}
+
+#about_header_1
+{
+position: absolute;
+margin-top: 2%;	
+margin-left: 10%;
+color: white;
+font-size: 2vw;
+font-family: bebasregular;
+}
+
+#about_header_2
+{
+position: absolute;
+margin-top: 6%;	
+margin-left: 10%;
+color: white;
+font-size: 6vw;
+font-family: bebasregular;
+}
+
+#jared_flowery_text
+{
+position: absolute;
+width: 150%;
+margin-left: 2%;
+color: black;
+font-size: 1.3vw;
+font-family: OpenSans-Regular;
+}
+
 /*=========LAYER 3 END===========*/
 
 /*=========LAYER 3_1 ===========*/
