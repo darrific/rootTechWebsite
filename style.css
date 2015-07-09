@@ -4,6 +4,35 @@ margin: 0;
 padding: 0;
 }
 
+/*+++++++++ DEFAULT CLASSES (DONT USE HEAVY GUNNING, JARED) +++++++++*/
+
+.text_middle
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.text_centerX
+{
+position: absolute;
+left: 50%;
+transform: translate(-50%, 0%);
+text-align: center;
+}
+
+.text_centerY
+{
+position: absolute;
+top: 50%;
+transform: translate(0%,-50%);
+text-align: center; 	
+}
+
+/*+++++++++ END OF DEFAULT CLASSES +++++++++*/
+
 #background
 {
 position: absolute;
@@ -336,26 +365,33 @@ height: 100%;
 display: none;
 }
 
+#fancy_text
+{
+position: absolute;
+width: 40%;
+height: 20%;
+}
+
 #container
 {
 position: absolute;
 width: 100%;
-height: 75%;
-top:50%;
-transform:translate(-0%, -50%);
+height: 65%;
+top:80%;
+transform:translate(-0%, -80%);
 }
 
 .option_layer_2
 {
 position: absolute;
-width: 40%;
+width: 35%;
 height: 100%;
 }
 
 #web_dev
 {
 position: absolute;
-margin-left: 8%;
+margin-left: 14%;
 font-size: 7vw;
 overflow: hidden;
 }
@@ -385,15 +421,6 @@ width: 100%;
 height: 100%;
 transform: scaleX(1.5);
 transform: scaleY(1.5);
-}
-
-.text_center
-{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
 }
 
 .option_layer_2 img
@@ -429,3 +456,25 @@ text-align: center;
 color: #f8be78;
 }
 /*=========LAYER 2_2 END===========*/
+
+/*=========LAYER 3 ===========*/
+/*=========LAYER 3 END===========*/
+
+/*=========LAYER 3_1 ===========*/
+/*=========LAYER 3_1 END===========*/
+
+/*=========LAYER 3_2 ===========*/
+/*=========LAYER 3_2 END===========*/
+
+/*=========LAYER 4 ===========*/
+/*=========LAYER 4 END===========*/
+
+/*=========LAYER 4_1 ===========*/
+/*=========LAYER 4_1 END===========*/
+
+/*=========LAYER 4_2 ===========*/
+/*=========LAYER 4_2 END===========*/
+
+/*=========LAYER 4_3 ===========*/
+/*=========LAYER 4_3 END===========*/
+
