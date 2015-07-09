@@ -18,7 +18,7 @@
 		<div id="motto">COOLTEXT WAS NOT USED IN THE MAKING OF THIS SITE</div>
 		<div id="menu_div">
 			<ul>
-				<li><a href="#" id="services"><div class="fix1">BOOKINGS</div></a></li>
+				<li><a href="#" id="services"><div class="fix1">SERVICES</div></a></li>
 				<li><a href="#" id="aboutus"><div class="fix1">ABOUT US</div></a></li>
 			</ul>
 		</div>
@@ -140,13 +140,23 @@
 	-->
 		</div>
 	</div>
-	<!--> ++++++++LAYER 1 END+++++++</!-->
+	<!--++++++++LAYER 1 END+++++++-->
 
-	<!--> ++++++++LAYER 2+++++++</!-->
-	<!--> ++++++++LAYER 2 END+++++++</!-->
-	<!--> ++++++++LAYER 2_1+++++++</!-->
-	<!--> ++++++++LAYER 2_1 END+++++++</!-->
-	<!--> ++++++++LAYER 2_2+++++++</!-->
+	<!--++++++++LAYER 2 -Darrien+++++++-->
+	<div id="layer_2">
+		<div id="container">
+			<div id="web_dev" class="option_layer_2">
+				<a href="#"><div class="text_center">WEB DEVELOPMENT</div><img src="images/about1.jpg" alt="" id="blur_on_hover_1"></a>
+			</div>
+			<div id="pc" class="option_layer_2">
+				<a href="#"><div class="text_center">PC</div><img src="images/pc.jpg" alt=""id="blur_on_hover_2"></a>
+			</div>
+		</div>
+	</div> 
+	<!--++++++++LAYER 2 END+++++++-->
+	<!--++++++++LAYER 2_1+++++++!-->
+	<!--++++++++LAYER 2_1 END+++++++-->
+	<!--++++++++LAYER 2_2+++++++-->
 	<div id="layer_2_2">
 		<div id="background_services"></div>
 
@@ -196,12 +206,14 @@
 		    <input type="submit" value="Submit">
 		</form>
 	</div>
-	<!--> ++++++++LAYER 2_2 END+++++++</!-->
+	<!--++++++++LAYER 2_2 END+++++++-->
 </body>
 
 <footer>
 	<script> //JAVASCRIPT- this makes the buttons do stuff
 		$(document).ready(function(){
+			
+			//LAYER_1 JS
 			$("#motto").fadeIn(100).delay(100).fadeOut(100);// Actual values are: 1k,2k,1k
 			$("#logo_div").delay(410).fadeIn(100);// Actual values are: 4.1k,1k
 			$("#menu_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
@@ -213,9 +225,12 @@
 				$("#logo_div").fadeOut(100);// Actual values are: 4.1k,1k
 				$("#menu_div").fadeOut(150);// Actual values are: 4.1k,1.5k
 				$("#media_div").fadeOut(150);// Actual values are: 4.1k,1.5k
-				$("#layer_2_2").fadeIn(1000);
+				$("#layer_2").fadeIn(1000);
 			});	 
 
+			//END LAYER_1 JS
+
+			//MUTE JS
 			var click_count = 1;
 			var click_count2 = 0;
 			$(".mute_icon").click(function(){
@@ -231,6 +246,63 @@
 						click_count2 = 0;	
 					}
 				});
+			//END MUTE JS
+
+				//LAYER_2 JS
+
+				$("#web_dev").mouseenter(function(){
+					$("#blur_on_hover_1").css('-webkit-filter','blur(5px)');
+					$("#web_dev img").css('transform','scaleX(1.2)');
+					$("#web_dev img").css('transform','scaleY(1.2)');
+				});
+				$("#web_dev").mouseleave(function(){
+					$("#blur_on_hover_1").css('-webkit-filter','blur(0px)');
+					$("#web_dev img").css('transform','scaleX(1.5)');
+					$("#web_dev img").css('transform','scaleY(1.5)');
+				});
+				
+
+				$("#pc").mouseenter(function(){
+					$("#blur_on_hover_2").css('-webkit-filter','blur(5px)');
+					$("#pc img").css('transform','scaleX(1.2)');
+					$("#pc img").css('transform','scaleY(1.2)');	
+				});
+				$("#pc").mouseleave(function(){
+					$("#blur_on_hover_2").css('-webkit-filter','blur(0px)');
+					$("#pc img").css('transform','scaleX(1.5)');
+					$("#pc img").css('transform','scaleY(1.5)');	
+				});
+				// END LAYER_2 JS
+
+				//LAYER_2_1 JS
+				//END LAYER_2_1 JS
+
+				//LAYER_2_2 JS
+				//END LAYER_2_2 JS
+
+				//LAYER_3 JS
+				//END LAYER_3 JS
+
+				//LAYER_3_1 JS
+				//END LAYER_3_1 JS
+
+				//LAYER_3_2 JS
+				//END LAYER_3_2 JS
+
+				//LAYER_4 JS
+				//END LAYER_4 JS
+
+				//LAYER_4_1 JS
+				//END LAYER_4_1 JS
+
+				//LAYER_4_2 JS
+				//END LAYER_4_2 JS
+
+				//LAYER_4_3 JS
+				//END LAYER_4_3 JS
+
+				//LAYER_5 JS
+				//END LAYER_5 JS
 			});		
 		</script>
 </footer>
