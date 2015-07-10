@@ -451,7 +451,7 @@ display: none;
 
 #service_form_back
 {
-position:fixed;
+position:absolute;
 top:50%;
 left: 50%;
 transform: translate(-120% , -50%);
@@ -464,7 +464,7 @@ opacity: 0.8;
 
 #service_form
 {
-position:fixed;
+position:absolute;
 top:50%;
 left: 50%;
 transform: translate(-120% , -55%);
@@ -485,7 +485,7 @@ text-decoration: none;
 
 #serviceform_boxes
 {
-position:fixed;
+position:absolute;
 text-align: left;
 top:50%;
 left: 50%;
@@ -557,6 +557,91 @@ font-family: skarp;
 font-size: 1vw;
 color: white;
 text-decoration: none;
+scrollbar-base-color: #999;
+scrollbar-arrow-color: #f8be78;
+scrollbar-face-color: #f8be78;
+}
+
+#services_or
+{
+margin-top: 20%;
+left: 50%;
+color: #f8be78;
+font-size: 7vw;
+font-family: furore;
+text-align: center;
+}
+
+#services_buttons
+{
+position: absolute;
+margin-top: -15%;
+right: 2%;
+width: 40%;
+height: 60%;
+}
+
+#contact_facebook
+{
+position: absolute;
+width: 93%;
+height: 15%;
+color: #f8be78;
+background-color: #222;
+text-align: center;
+text-decoration: none;
+font-size: 3vw;
+font-family: michroma;
+padding: 3%;
+border: solid;
+border-top-color: #999;
+border-right-color: #999;
+border-bottom-color: none; 
+border-left-color: none;
+border-radius: 5%;
+}
+
+#contact_whatsapp
+{
+position: absolute;
+width: 93%;
+height: 15%;
+margin-top: 40%;
+color: #f8be78;
+background-color: #222;
+text-align: center;
+text-decoration: none;
+font-size: 3vw;
+font-family: michroma;
+padding: 3%;
+border: solid;
+border-top-color: #999;
+border-right-color: #999;
+border-bottom-color: none; 
+border-left-color: none;
+border-radius: 5%;
+}
+
+#whatsapp_number
+{
+position: absolute;
+width: 93%;
+height: 15%;
+margin-top: 40%;
+color: #f8be78;
+background-color: #222;
+text-align: center;
+text-decoration: none;
+font-size: 3vw;
+font-family: michroma;
+padding: 3%;
+border: solid;
+border-top-color: #999;
+border-right-color: #999;
+border-bottom-color: none; 
+border-left-color: none;
+border-radius: 5%;
+display: none;
 }
 
 /*=========LAYER 2_2 END===========*/
