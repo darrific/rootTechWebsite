@@ -1,0 +1,60 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+
+/*+++++++++ DEFAULT CLASSES (DONT USE HEAVY GUNNING, JARED) +++++++++*/
+
+.text_middle
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.text_centerX
+{
+position: absolute;
+left: 50%;
+transform: translate(-50%, 0%);
+text-align: center;
+}
+
+.text_centerY
+{
+position: absolute;
+top: 50%;
+transform: translate(0%,-50%);
+text-align: center; 	
+}
+
+/*+++++++++ END OF DEFAULT CLASSES +++++++++*/
+
+#layer_3_1
+{
+ position: absolute; 
+ width: 100%; 
+ height: 100%;	
+ background-color:;
+}
+#slider_container
+{
+ position: absolute;
+ width: 100%;	
+ height: 80%;
+ background-color: black;
+ top: 20%;
+
+}
+
+#teamname_container
+{
+ position:absolute;
+ font-family: bebasbold;
+ font-size: 6vw;
+ color: grey;
+ top: 4.5%;	
+}
