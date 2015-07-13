@@ -690,29 +690,36 @@ background-color: #999;
 position: absolute;
 }
 
+#layer4_title
+{
+position: fixed;
+text-align: center;
+top: 2%;
+left: 0%;
+font-family: michroma;
+font-size: 4vw;
+}
+
 nav 
 {
 position: absolute;
 text-align: center;
 background-color: #222;
 top: 7.5%;
-height: 10%;
 width: 100%;
 z-index: 500;
--webkit-transition: height 2s;
 }
 
 nav ul
 {
 width: 100%;
-
 }
 
 nav li
 {
 list-style-type: none;
 display: inline-block;
-width: 24.8%;
+width: 33.1%;
 }
 
 nav a
@@ -723,31 +730,28 @@ text-decoration: none;
 font-family: bebasregular;
 font-size: 3vw;
 color: #999;
-padding-top: 35%;
-padding-bottom: 35%;
+padding-top: 26.3%;
+padding-bottom: 26.3%;
 }
 
 nav a:hover
 {
-transition: background-color 0.5s ease-in;
+transition: background-color 0.2s ease-in;
 background-color: #333;
 }
 
 .fixed
 {
 position: fixed;
-background-color: #222;
 top: 0;
-width: 100%;
-z-index: 500;
 }
 
-.fixed_2
+.fixed2
 {
-color: #61ff30;
-padding-top: 6%;
-padding-bottom: 6%;
-font-size: 2vw;
+padding-top: 4.8%;
+padding-bottom: 4.8%;
+-webkit-transition: padding-top 0.1s ease-in;
+-webkit-transition: padding-bottom 0.1s ease-in;
 }
 
 /*=========LAYER 4 END===========*/

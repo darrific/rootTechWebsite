@@ -233,10 +233,10 @@
 	
 <!--++++++++LAYER 4 +++++++-->
 	<div id="layer_4">
+		<div ID="layer4_title">WHAT WE DO TO YOUR MOTHERFUCKING PC!</div>
 		<nav>	
 			<ul>
 				<li><a href="">Repairs</a></li>
-				<li><a href="">Custom Build</a></li>
 				<li><a href="">Upgrades</a></li>
 				<li><a href="">Request Our Services</a></li>
 			</ul>
@@ -375,20 +375,17 @@
 
 			var navOffset = $("nav").offset().top;
 
-			$("nav").wrap('<div class="nav-placeholder"></div>');
-			$(".nav-placeholder").height($("nav").outerHeight());
-	
-				$(window).scroll(function(){
-					var scrollPos = $(window).scrollTop();
+			$(window).scroll(function(){
+				var scrollPos = $(window).scrollTop();
 
-					if (scrollPos >= navOffset) {
-						$("nav").addClass("fixed");
-						$("nav a").addClass("fixed_2");
-					} else {
-						$("nav").removeClass("fixed");
-						$("nav a").removeClass("fixed_2");
-					}
-				});	
+				if (scrollPos >= navOffset) {
+					$("nav").addClass("fixed");
+					$("nav a").addClass("fixed2");
+				} else {
+					$("nav").removeClass("fixed");
+					$("nav a").removeClass("fixed2");
+				}
+			});
 			
 			//END LAYER_4 JS
 
