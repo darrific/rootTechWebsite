@@ -1,4 +1,49 @@
 *
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 {
 margin: 0;
 padding: 0;
@@ -39,7 +84,9 @@ position: absolute;
 width: 100%;
 height: 100%;
 z-index: -10;
-background: -webkit-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
+background: -webkit-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -moz-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -o-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
 }
 
 #layer_1
@@ -61,7 +108,7 @@ top: 20%;
 transform: translate(-20%, -30%);
 text-align: center;
 font-size: 9vw;
-font-family: bebasbold;
+font-family: bebas_neuebold;
 z-index: 1;
 color: #fff ;
 display: none;
@@ -71,7 +118,7 @@ display: none;
 {
 position: absolute;
 color: #fff;
-font-family: bebasbold;
+font-family: bebas_neuebold;
 font-size: 5vw;
 top: 50%;
 left: 50%;
@@ -86,7 +133,7 @@ width: 30%;
 left: 50%;
 top: 65%;
 transform: translate(-50%, -100%);
-font-family: bebasbook;
+font-family: bebas_neuebook;
 z-index: 2;
 display: none;
 }	
@@ -190,11 +237,6 @@ fill: #f8be78;
 .media_item3:hover
 {
 fill: #64D448;
-}
-
-#allahuakbar
-{
-display: none;
 }
 
 .mute_icon
@@ -410,7 +452,7 @@ overflow: hidden;
 {
 text-decoration: none;
 color: white;
-font-family: bebasbold;
+font-family: bebas_neuebold;
 z-index: 1;
 color: red;
 }
@@ -541,7 +583,7 @@ top: 50%;
 left: 50%;
 transform: translate(350%, 30%);
 padding: 20px;
-font-family: bebaslight;
+font-family: bebas_neuelight;
 font-size: 1vw;
 color: white;
 text-decoration: none;
@@ -570,7 +612,7 @@ margin-top: 20%;
 left: 50%;
 color: #f8be78;
 font-size: 7vw;
-font-family: furore;
+font-family: furoreregular;
 text-align: center;
 }
 
@@ -593,7 +635,7 @@ background-color: #222;
 text-align: center;
 text-decoration: none;
 font-size: 3vw;
-font-family: michroma;
+font-family: michromaregular;
 padding: 3%;
 border: solid;
 border-top-color: #999;
@@ -614,7 +656,7 @@ background-color: #222;
 text-align: center;
 text-decoration: none;
 font-size: 3vw;
-font-family: michroma;
+font-family: michromaregular;
 padding: 3%;
 border: solid;
 border-top-color: #999;
@@ -635,7 +677,7 @@ background-color: #222;
 text-align: center;
 text-decoration: none;
 font-size: 3vw;
-font-family: michroma;
+font-family: michromaregular;
 padding: 3%;
 border: solid;
 border-top-color: #999;
@@ -687,7 +729,7 @@ color: white;
 background-color: #222;
 text-decoration: none;
 font-size: 3vw;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 padding: 5%;
 border-radius: 5px;
 }
@@ -711,7 +753,7 @@ margin-top: 2%;
 margin-left: 10%;
 color: white;
 font-size: 2vw;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 }
 
 #about_header_2
@@ -721,7 +763,7 @@ margin-top: 6%;
 margin-left: 10%;
 color: white;
 font-size: 6vw;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 }
 
 #jared_flowery_text
@@ -731,7 +773,7 @@ width: 150%;
 margin-left: 2%;
 color: black;
 font-size: 1.3vw;
-font-family: OpenSans-Regular;
+font-family: open_sansregular;
 }
 
 /*=========LAYER 3 END===========*/
@@ -781,7 +823,7 @@ nav a
 text-align: center;
 display: block;
 text-decoration: none;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 font-size: 3vw;
 padding-top: 35%;
 padding-bottom: 35%;
