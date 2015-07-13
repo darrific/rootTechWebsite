@@ -50,13 +50,19 @@ z-index: 10;
 overflow: hidden;
 }
 
+#logo_container
+{
+position: absolute;
+top: 50%;
+width: 40%;
+height: 60%;
+text-align: center;
+}
+
 #logo_div
 {
 position: absolute;
-width: 40%;
 height: 45%;
-left: 30%;	
-top: 20%;
 transform: translate(-20%, -30%);
 text-align: center;
 font-size: 9vw;
@@ -81,10 +87,8 @@ display: none;
 #menu_div
 {
 position: absolute;
-width: 30%;
-left: 50%;
-top: 65%;
-transform: translate(-50%, -100%);
+width: 100%;
+top: 400px;
 font-family: bebasbook;
 z-index: 2;
 display: none;
@@ -92,7 +96,7 @@ display: none;
 
 #menu_div ul
 {
-margin-left: 15%; 
+margin-left: 0%; 
 }
 
 #menu_div li
