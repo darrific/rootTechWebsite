@@ -11,15 +11,46 @@
 </head>
 
 <body>
-	<div id="background_about"></div>
-	<div id="roottech_about" class="animated fadeInLeft">
-		Root Technologies
+	<div id="layer_4">
+		<nav>	
+			<ul>
+				<li><a href="">Repairs</a></li>
+				<li><a href="">Custom Build</a></li>
+				<li><a href="">Upgrades</a></li>
+				<li><a href="">Request Our Services</a></li>
+			</ul>
+		</nav>
 	</div>
-	<div id="about_text"></br>Summon: Hamid the Hammer.</div>
-
 </body>
 
 <footer>
-	
+	<script>
+		var navOffset = $("nav").offset().top;
+
+		$("nav").wrap('<div class="nav-placeholder"></div>');
+		$(".nav-placeholder").height($("nav").outerHeight());
+
+			$(window).scroll(function(){
+				var scrollPos = $(window).scrollTop();
+
+				if (scrollPos >= navOffset) {
+					$("nav").addClass("fixed");
+					$("nav a").addClass("fixed_2");
+				} else {
+					$("nav").removeClass("fixed");
+					$("nav a").removeClass("fixed_2");
+				}
+			});
+
+				if (scrollPos >= navOffset) {
+					$("nav").addClass("fixed");
+					$("nav a").addClass("fixed_2");
+				} else {
+					$("nav").removeClass("fixed");
+					$("nav a").removeClass("fixed_2");
+				}
+			});	
+		
+	</script>
 </footer>
 </html>

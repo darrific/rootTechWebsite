@@ -123,6 +123,12 @@
 	</div> 
 	<!--++++++++LAYER 2 END+++++++-->
 	<!--++++++++LAYER 2_1+++++++-->
+	<div id="layer_2_1">		
+		<div id="B_Bl_Bo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit...</div>
+		<div id="req_web_button" class="text_centerX"><a href="#">Request Our Services</a></div>
+		<div id="pw_web_button" class="text_centerX"><a href="#">Past Work</a></div>
+
+	</div>	
 	<!--++++++++LAYER 2_1 END+++++++-->
 	<!--++++++++LAYER 2_2 KCB+++++++-->
 	<div id="layer_2_2">
@@ -223,17 +229,15 @@
 
 	
 <!--++++++++LAYER 4 +++++++-->
-	<div id="layer_4_hide">
-		<div id="layer_4">
-			<nav>	
-				<ul>
-					<li><a href="">Repairs</a></li>
-					<li><a href="">Custom Build</a></li>
-					<li><a href="">Upgrades</a></li>
-					<li><a href="">Request Our Services</a></li>
-				</ul>
-			</nav>
-		</div>	
+	<div id="layer_4">
+		<nav>	
+			<ul>
+				<li><a href="">Repairs</a></li>
+				<li><a href="">Custom Build</a></li>
+				<li><a href="">Upgrades</a></li>
+				<li><a href="">Request Our Services</a></li>
+			</ul>
+		</nav>
 	</div>
 
 	<!--++++++++LAYER 4_1 +++++++-->
@@ -263,8 +267,6 @@
 			$("#media_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
 			$(".mute_icon").delay(441).fadeIn(150);// Actual values are: 4.1k,1.5k
 			$("#layer_4").hide();
-			document.getElementById("drama").play()= true;
-			document.getElementById("drama").volume()= 0.2;
 			});
 
 			$("#services").click(function(){
@@ -332,7 +334,6 @@
 			$("#pc").click(function(){
 				$("#layer_2").fadeOut(100);
 				$("#layer_4").fadeIn(1000);
-				document.getElementById("ouu").play()= true;
 			});
 			// END LAYER_2 JS
 
@@ -343,6 +344,8 @@
 			});
 			
 			//END LAYER_2_1 JS
+			
+			//LAYER_2_2 JS
 			$("#contact_whatsapp").mouseenter(function(){				
 				$("#whatsapp_number").fadeIn(500);
 			});
@@ -350,8 +353,6 @@
 			$("#whatsapp_number").mouseleave(function(){								
 				$("#whatsapp_number").fadeOut(500);
 			});
-			//LAYER_2_2 JS
-
 			//END LAYER_2_2 JS
 
 			//LAYER_3 JS
