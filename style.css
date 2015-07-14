@@ -69,7 +69,7 @@ height: 45%;
 transform: translate(-20%, -30%);
 text-align: center;
 font-size: 9vw;
-font-family: bebasbold;
+font-family: bebas_neuebold;
 z-index: 1;
 color: #fff ;
 display: none;
@@ -79,7 +79,7 @@ display: none;
 {
 position: absolute;
 color: #fff;
-font-family: bebasbold;
+font-family: bebas_neuebold;
 font-size: 5vw;
 top: 50%;
 left: 50%;
@@ -92,7 +92,7 @@ display: none;
 position: absolute;
 width: 100%;
 top: 400px;
-font-family: bebasbook;
+font-family: bebas_neuebook;
 z-index: 2;
 display: none;
 }	
@@ -271,7 +271,7 @@ overflow: hidden;
 {
 text-decoration: none;
 color: white;
-font-family: bebasbold;
+font-family: bebas_neuebold;
 z-index: 1;
 color: red;
 }
@@ -340,7 +340,7 @@ text-align: center;
 padding-top: 1.5%;
 padding-bottom: 1.5%;
 font-size: 3vw;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 color:white;
 border:solid;
 border-color: #f8be78;
@@ -360,7 +360,7 @@ text-align: center;
 padding-top: 1.5%;
 padding-bottom: 1.5%;
 font-size: 3vw;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 color:white;
 border:solid;
 border-color: #f8be78;
@@ -379,6 +379,9 @@ width: 100%;
 height: 100%;
 z-index: -10;
 background: -webkit-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
+background: -moz-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
+background: -o-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
+background: -ms-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
 }
 
 #layer_2_2
@@ -417,7 +420,7 @@ border-radius: 5%;
 {
 margin-top: -20%;
 text-align: center;
-font-family: furore;
+font-family: furoreregular;
 font-size: 2.5vw;
 color: #f8be78;
 text-decoration: none;
@@ -435,7 +438,7 @@ z-index: 6;
 
 #service_form_text
 {
-font-family: neue;
+font-family: furoreregular;
 font-size: 2vw;
 text-align: left;
 margin-left: 3%;
@@ -479,7 +482,7 @@ top: 50%;
 left: 50%;
 transform: translate(350%, 30%);
 padding: 20px;
-font-family: bebaslight;
+font-family: bebas_neuelight;
 font-size: 1vw;
 color: white;
 text-decoration: none;
@@ -508,7 +511,7 @@ margin-top: 20%;
 left: 50%;
 color: #f8be78;
 font-size: 7vw;
-font-family: furore;
+font-family: furoreregular;
 text-align: center;
 }
 
@@ -531,7 +534,7 @@ background-color: #222;
 text-align: center;
 text-decoration: none;
 font-size: 3vw;
-font-family: michroma;
+font-family: michromaregular;
 padding: 3%;
 border: solid;
 border-top-color: #999;
@@ -552,7 +555,7 @@ background-color: #222;
 text-align: center;
 text-decoration: none;
 font-size: 3vw;
-font-family: michroma;
+font-family: michromaregular;
 padding: 3%;
 border: solid;
 border-top-color: #999;
@@ -573,7 +576,7 @@ background-color: #222;
 text-align: center;
 text-decoration: none;
 font-size: 3vw;
-font-family: michroma;
+font-family: michromaregular;
 padding: 3%;
 border: solid;
 border-top-color: #999;
@@ -625,7 +628,7 @@ color: white;
 background-color: #222;
 text-decoration: none;
 font-size: 3vw;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 padding: 5%;
 border-radius: 5px;
 }
@@ -649,7 +652,7 @@ margin-top: 2%;
 margin-left: 10%;
 color: white;
 font-size: 2vw;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 }
 
 #about_header_2
@@ -659,7 +662,7 @@ margin-top: 6%;
 margin-left: 10%;
 color: white;
 font-size: 6vw;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 }
 
 #jared_flowery_text
@@ -669,7 +672,7 @@ width: 150%;
 margin-left: 2%;
 color: black;
 font-size: 1.3vw;
-font-family: OpenSans-Regular;
+font-family: open_sansregular;
 }
 
 /*=========LAYER 3 END===========*/
@@ -696,7 +699,7 @@ position: fixed;
 text-align: center;
 top: 2%;
 left: 0%;
-font-family: michroma;
+font-family: michromaregular;
 font-size: 4vw;
 }
 
@@ -727,7 +730,7 @@ nav a
 text-align: center;
 display: block;
 text-decoration: none;
-font-family: bebasregular;
+font-family: bebas_neueregular;
 font-size: 3vw;
 color: #999;
 padding-top: 26.3%;
