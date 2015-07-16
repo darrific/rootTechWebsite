@@ -379,9 +379,6 @@ width: 100%;
 height: 100%;
 z-index: -10;
 background: -webkit-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
-background: -moz-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
-background: -o-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
-background: -ms-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
 }
 
 #layer_2_2
@@ -402,7 +399,7 @@ width: 40%;
 height: 80%;
 background-color: #3d3d3d;
 border-radius: 5%;
-opacity: 0.8;
+opacity: 0.75;
 }
 
 #service_form
@@ -420,7 +417,7 @@ border-radius: 5%;
 {
 margin-top: -20%;
 text-align: center;
-font-family: furoreregular;
+font-family: furore;
 font-size: 2.5vw;
 color: #f8be78;
 text-decoration: none;
@@ -432,13 +429,15 @@ position:absolute;
 text-align: left;
 top:50%;
 left: 50%;
-transform: translate(-50% , -28%);
+width: 100%;
+height: 100%;
+transform: translate(-44% , -22%);
 z-index: 6;
 }
 
 #service_form_text
 {
-font-family: furoreregular;
+font-family: rb;
 font-size: 2vw;
 text-align: left;
 margin-left: 3%;
@@ -449,7 +448,7 @@ z-index: 6;
 
 #service_form_text p
 {
-font-family: neue;
+font-family: rb;
 font-size: 2vw;
 text-align: left;
 margin-left: 3%;
@@ -460,12 +459,11 @@ color: #f8be78;
 
 .serviceform_entity
 {
-width: 670px;
-height: 50px;
+width: 87%;
 background-color: #222;
 border: 2px;
 border-color: white;
-margin-bottom: 12%;
+margin-bottom: 10.5%;
 font-family: rb;
 text-align: center;
 font-size: 2vw;
@@ -480,9 +478,9 @@ height: auto;
 background-color: #222;
 top: 50%;
 left: 50%;
-transform: translate(350%, 30%);
+transform: translate(350%, 33%);
 padding: 20px;
-font-family: bebas_neuelight;
+font-family: bebaslight;
 font-size: 1vw;
 color: white;
 text-decoration: none;
@@ -490,8 +488,9 @@ text-decoration: none;
 
 .serviceform_message
 {
-width: 670px;
-height: 180px;
+width: 87%;
+height: 21.3%;
+margin-top: 0.5%;
 background-color: #222;
 border: 2px;
 border-color: white;
@@ -500,9 +499,6 @@ font-family: skarp;
 font-size: 1vw;
 color: white;
 text-decoration: none;
-scrollbar-base-color: #999;
-scrollbar-arrow-color: #f8be78;
-scrollbar-face-color: #f8be78;
 }
 
 #services_or
@@ -511,7 +507,7 @@ margin-top: 20%;
 left: 50%;
 color: #f8be78;
 font-size: 7vw;
-font-family: furoreregular;
+font-family: furore;
 text-align: center;
 }
 
@@ -534,7 +530,7 @@ background-color: #222;
 text-align: center;
 text-decoration: none;
 font-size: 3vw;
-font-family: michromaregular;
+font-family: michroma;
 padding: 3%;
 border: solid;
 border-top-color: #999;
@@ -555,7 +551,7 @@ background-color: #222;
 text-align: center;
 text-decoration: none;
 font-size: 3vw;
-font-family: michromaregular;
+font-family: michroma;
 padding: 3%;
 border: solid;
 border-top-color: #999;
@@ -576,7 +572,7 @@ background-color: #222;
 text-align: center;
 text-decoration: none;
 font-size: 3vw;
-font-family: michromaregular;
+font-family: michroma;
 padding: 3%;
 border: solid;
 border-top-color: #999;
@@ -699,7 +695,7 @@ position: fixed;
 text-align: center;
 top: 2%;
 left: 0%;
-font-family: michromaregular;
+font-family: michroma;
 font-size: 4vw;
 }
 
@@ -730,7 +726,7 @@ nav a
 text-align: center;
 display: block;
 text-decoration: none;
-font-family: bebas_neueregular;
+font-family: bebasregular;
 font-size: 3vw;
 color: #999;
 padding-top: 26.3%;
@@ -767,4 +763,3 @@ padding-bottom: 4.8%;
 
 /*=========LAYER 4_3 ===========*/
 /*=========LAYER 4_3 END===========*/
-

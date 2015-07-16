@@ -137,40 +137,6 @@
 	<!--++++++++LAYER 2_2 KCB+++++++-->
 	<div id="layer_2_2">
 		<div id="background_services"></div>
-
-		<?php
-		$errors = '';
-		$myemail = 'roottechnologiestt@gmail.com';//<-----Put Your email address here.
-		if(empty($_POST['name'])  ||
-		   empty($_POST['email']) ||
-		   empty($_POST['message']))
-		{
-		    $errors .= "\n Error: all fields are required";
-		}
-		$name = $_POST['name'];
-		$email_address = $_POST['email'];
-		$message = $_POST['message'];
-		if (!preg_match(
-		"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-		$email_address))
-		{
-		    $errors .= "\n Error: Invalid email address";
-		}
-
-		if( empty($errors))
-		{
-		$to = $myemail;
-		$email_subject = "Contact form submission: $name";
-		$email_body = "You have received a new message. ".
-		" Here are the details:\n Name: $name \n ".
-		"Email: $email_address\n Message \n $message";
-		$headers = "From: $myemail\n";
-		$headers .= "Reply-To: $email_address";
-		mail($to,$email_subject,$email_body,$headers);
-		//redirect to the 'thank you' page
-		header('Location: contact-form-thank-you.html');
-		}
-		?>
 		
 		<div id="service_form_back"></div>		
 			<div id="service_form">				
@@ -180,21 +146,21 @@
 					<p>E-mail Address</p>			
 					<p>Message</p>
 				</div>
-			<form id="serviceform_boxes" method="post" name="contact_form"caction="contact-form-handler.php">					
+			<form id="serviceform_boxes" method="post" name="contact_form" action="l22form.php">					
 			    <input class="serviceform_entity" type="text" name="name" placeholder="Enter your name">
 			    <br>			    
 			    <input class="serviceform_entity" type="text" name="email" placeholder="get_rekt_noob@root.com">
 			    <br>			    
 			    <textarea id="messagebox" class="serviceform_message" name="message" placeholder="Type your message here"></textarea>
 			    <br>
-			    <input class="serviceform_submit" type="submit" value="Submit">
+			    <input id="submitEmail" class="serviceform_submit" type="submit" value="Submit">
 			</form>
 			</div>
 		<div id="services_or">OR</div>
 		<div id="services_buttons">		
 			<div id="contact_facebook">Facebook</div>
 			<div id="contact_whatsapp">WhatsApp</div>
-			<div id="whatsapp_number">(868) 497-5118</div>
+			<div id="whatsapp_number">356-9753</div>
 		</div>		
 		</div>
 
@@ -237,9 +203,9 @@
 		<div ID="layer4_title">WHAT WE DO TO YOUR MOTHERFUCKING PC!</div>
 		<nav>	
 			<ul>
-				<li><a href="">Repairs</a></li>
-				<li><a href="">Upgrades</a></li>
-				<li><a href="">Request Our Services</a></li>
+				<li><a href="#">Repairs</a></li>
+				<li><a href="#">Upgrades</a></li>
+				<li><a href="#" id="req_services">Request Our Services</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -316,18 +282,19 @@
 				$("#blur_on_hover_1").css('-webkit-filter','blur(5px)');
 				$("#web_dev img").css('transform','scaleX(1.2)');
 				$("#web_dev img").css('transform','scaleY(1.2)');
+				$("#web_dev img").css('-webkit-transition','-webkit-filter 0.5s ease-in');
 			});
 			$("#web_dev").mouseleave(function(){
 				$("#blur_on_hover_1").css('-webkit-filter','blur(0px)');
 				$("#web_dev img").css('transform','scaleX(1.5)');
 				$("#web_dev img").css('transform','scaleY(1.5)');
-			});
-			
+			});			
 
 			$("#pc").mouseenter(function(){
 				$("#blur_on_hover_2").css('-webkit-filter','blur(5px)');
 				$("#pc img").css('transform','scaleX(1.2)');
-				$("#pc img").css('transform','scaleY(1.2)');	
+				$("#pc img").css('transform','scaleY(1.2)');
+				$("#pc img").css('-webkit-transition','-webkit-filter 0.5s ease-in');	
 			});
 			$("#pc").mouseleave(function(){
 				$("#blur_on_hover_2").css('-webkit-filter','blur(0px)');
@@ -361,6 +328,13 @@
 			$("#whatsapp_number").mouseleave(function(){								
 				$("#whatsapp_number").fadeOut(500);
 			});
+
+			
+			var frmvalidator  = new Validator("contactform");
+			frmvalidator.addValidation("name","req","Please provide your name");
+			frmvalidator.addValidation("email","req","Please provide your email");
+			frmvalidator.addValidation("email","email",
+			"Please enter a valid email address");
 			//END LAYER_2_2 JS
 
 			//LAYER_3 JS
