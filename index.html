@@ -127,8 +127,12 @@
 	</div> 
 	<!--++++++++LAYER 2 END+++++++-->
 	<!--++++++++LAYER 2_1+++++++-->
-	<div id="layer_2_1">		
-		<div id="B_Bl_Bo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit...</div>
+	<div id="layer_2_1">
+
+		<div id="box_parent">
+			<img src="images\3437-grey-smoke-and-texture-1920x1080-abstract-wallpaper.jpg" alt="">
+			<div id="B_Bl_Bo"> This right here would seem to be the place in which the thing is placed. As such insert FLOWERY BULL HERE</div>
+		</div>
 		<div id="req_web_button" class="text_centerX"><a href="#">Request Our Services</a></div>
 		<div id="pw_web_button" class="text_centerX"><a href="#">Past Work</a></div>
 
@@ -314,10 +318,13 @@
 			// END LAYER_2 JS
 
 			//LAYER_2_1 JS
-			$("#req_web_button").click(function(){
-			$("#layer_2_1").fadeOut(100);// Actual values are: 1k,2k,1k
-			$("#layer_2_2").fadeIn(1000);
+		$(document).ready(function(){
+				$("#req_web_button").click(function(){
+				$("#layer_2_1").fadeOut(100);// Actual values are: 1k,2k,1k
+				$("#layer_2_2").fadeIn(1000);
+				});
 			});
+			
 			//END LAYER_2_1 JS
 			
 			//LAYER_2_2 JS
