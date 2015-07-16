@@ -329,7 +329,6 @@
 				$("#whatsapp_number").fadeOut(500);
 			});
 
-			
 			var frmvalidator  = new Validator("contactform");
 			frmvalidator.addValidation("name","req","Please provide your name");
 			frmvalidator.addValidation("email","req","Please provide your email");
@@ -347,6 +346,11 @@
 			//END LAYER_3_2 JS
 
 			//LAYER_4 JS
+
+			$("#req_services").click(function(){
+				$("#layer_4").fadeOut(500);
+				$("#layer_2_2").fadeIn(1000);
+			});
 
 			var navOffset = $("nav").offset().top;
 
