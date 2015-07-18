@@ -27,7 +27,7 @@
 			</div>
 		</div>	
 		
-		<div id="motto">COOLTEXT WAS NOT USED IN THE MAKING OF THIS SITE</div>
+		<div id="motto">10 JOSEF POINTS TO YOU</div>
 		<div id="media_div"> <!-- THese are the svgs-->
 			<ul>
 				<li><a href="#"><?xml version="1.0" encoding="iso-8859-1"?>
@@ -203,11 +203,40 @@
 		<div ID="layer4_title">WHAT WE DO TO YOUR MOTHERFUCKING PC!</div>
 		<nav>	
 			<ul>
-				<li><a href="#">Repairs</a></li>
-				<li><a href="#">Upgrades</a></li>
+				<li><a href="#repairs">Repairs</a></li>
+				<li><a href="#upgrades">Upgrades</a></li>
 				<li><a href="#" id="req_services">Request Our Services</a></li>
 			</ul>
-		</nav>
+		</nav>		
+		<div id="layer_4_1">
+			<a name="repairs" class=offset>	
+			<div class="l4_titles">
+				<ul>
+					<li>HARDWARE</li>
+					<li>SOFTWARE</li>
+				</ul>
+			</div>
+			<div id="hardware">
+				<div>
+					
+				</div>	
+			</div>
+			<div id="software">				
+			</div>
+		</div>
+		<div id="layer_4_2">
+			<a name="upgrades" class=offset>
+			<div class="l4_titles">
+				<ul>
+					<li>LAPTOP</li>
+					<li>DESKTOP</li>
+				</ul>
+			</div>
+			<div id="laptop">			
+			</div>
+			<div id="desktop">			
+			</div>
+		</div>
 	</div>
 
 	<!--++++++++LAYER 4_1 +++++++-->
@@ -220,9 +249,6 @@
 	<!--++++++++LAYER 4_3 END+++++++-->
 
 <!--++++++++LAYER 4 END+++++++-->
-
-	
-
 
 </body>
 
@@ -237,6 +263,7 @@
 			$("#media_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
 			$(".mute_icon").delay(441).fadeIn(150);// Actual values are: 4.1k,1.5k
 			$("#layer_4").hide();
+
 			});
 
 			$("#services").click(function(){
@@ -310,6 +337,7 @@
 			$("#pc").click(function(){
 				$("#layer_2").fadeOut(100);
 				$("#layer_4").fadeIn(1000);
+				$("#layer_1").hide;
 			});
 			// END LAYER_2 JS
 
@@ -329,11 +357,6 @@
 				$("#whatsapp_number").fadeOut(500);
 			});
 
-			var frmvalidator  = new Validator("contactform");
-			frmvalidator.addValidation("name","req","Please provide your name");
-			frmvalidator.addValidation("email","req","Please provide your email");
-			frmvalidator.addValidation("email","email",
-			"Please enter a valid email address");
 			//END LAYER_2_2 JS
 
 			//LAYER_3 JS
@@ -360,9 +383,11 @@
 				if (scrollPos >= navOffset) {
 					$("nav").addClass("fixed");
 					$("nav a").addClass("fixed2");
+					$("nav a").removeClass("fixed3");
 				} else {
 					$("nav").removeClass("fixed");
 					$("nav a").removeClass("fixed2");
+					$("nav a").addClass("fixed3");
 				}
 			});
 			
