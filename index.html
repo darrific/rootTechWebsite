@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="fonts.css">
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="scroll.js"></script>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
 
 <title>Root Tech</title>
 
@@ -200,16 +201,19 @@
 	
 <!--++++++++LAYER 4 +++++++-->
 	<div id="layer_4">
-		<div ID="layer4_title">WHAT WE DO TO YOUR MOTHERFUCKING PC!</div>
+		<div id="layer4_title"> Our pc services include</div>
 		<nav>	
 			<ul>
-				<li><a href="#repairs">Repairs</a></li>
-				<li><a href="#upgrades">Upgrades</a></li>
+				<li><a href="#" id="repairs_button">Repairs</a></li>
+				<li><a href="#" id="upgrades_button">Upgrades</a></li>
 				<li><a href="#" id="req_services">Request Our Services</a></li>
 			</ul>
 		</nav>		
-		<div id="layer_4_1">
-			<a name="repairs" class=offset>	
+		
+		
+
+	<!--++++++++LAYER 4_1 +++++++-->
+	<div id="layer_4_1">		
 			<div class="l4_titles">
 				<ul>
 					<li>HARDWARE</li>
@@ -217,32 +221,42 @@
 				</ul>
 			</div>
 			<div id="hardware">
-				<div>
+				<img src="images/hardware.jpg" alt=":(">
+				<div id="hardware_content">
 					
-				</div>	
+				</div>
 			</div>
-			<div id="software">				
+			<div id="software">
+				<img src="images/software.png" alt=":(">
+				<div id="software_content">
+					
+				</div>
 			</div>
 		</div>
-		<div id="layer_4_2">
-			<a name="upgrades" class=offset>
+	<!--++++++++LAYER 4_1 END+++++++-->
+
+	<!--++++++++LAYER 4_2 +++++++-->
+	<div id="layer_4_2">			
 			<div class="l4_titles">
 				<ul>
 					<li>LAPTOP</li>
 					<li>DESKTOP</li>
 				</ul>
 			</div>
-			<div id="laptop">			
+			<div id="laptop">
+				<img src="images/laptop.jpg" alt=":(">
+				<div id="laptop_content">
+					
+				</div>
 			</div>
-			<div id="desktop">			
+			<div id="desktop">
+				<img src="images/desktop.png" alt=":(">
+				<div id="desktop_content">
+					
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<!--++++++++LAYER 4_1 +++++++-->
-	<!--++++++++LAYER 4_1 END+++++++-->
-
-	<!--++++++++LAYER 4_2 +++++++-->
 	<!--++++++++LAYER 4_2 END+++++++-->
 
 	<!--++++++++LAYER 4_3 +++++++-->
@@ -343,7 +357,7 @@
 
 			//LAYER_2_1 JS
 			$("#req_web_button").click(function(){
-			$("#layer_2_1").fadeOut(100);// Actual values are: 1k,2k,1k
+			$("#laymnmner_2_1").fadeOut(100);// Actual values are: 1k,2k,1k
 			$("#layer_2_2").fadeIn(1000);
 			});
 			//END LAYER_2_1 JS
@@ -384,13 +398,18 @@
 					$("nav").addClass("fixed");
 					$("nav a").addClass("fixed2");
 					$("nav a").removeClass("fixed3");
+					$("#layer4_title").fadeOut(50);					
 				} else {
 					$("nav").removeClass("fixed");
 					$("nav a").removeClass("fixed2");
 					$("nav a").addClass("fixed3");
+					$("#layer4_title").fadeIn(100);
 				}
 			});
-			
+
+			$("#repairs_button").click(function(){
+				$('body').scrollTo("#layer_4_1")
+			});
 			//END LAYER_4 JS
 
 			//LAYER_4_1 JS

@@ -678,7 +678,7 @@ font-family: OpenSans-Regular;
 {
 width: 100%;
 height: 400%;
-background-color: #999;
+background: -webkit-linear-gradient(#5C2E00,#663300,#754719,#855C33,#291400,#331A00,#3D1F00,#472400,#522900,#5C2E00,#663300,#754719,#855C33,#94704D);
 position: absolute;
 }
 
@@ -690,6 +690,7 @@ top: 2%;
 left: 0%;
 font-family: michroma;
 font-size: 4vw;
+color: #f8be78;
 }
 
 nav 
@@ -721,7 +722,7 @@ display: block;
 text-decoration: none;
 font-family: bebasregular;
 font-size: 3vw;
-color: #999;
+color: #f8be78;
 padding-top: 26.2%;
 padding-bottom: 26.2%;
 }
@@ -729,7 +730,9 @@ padding-bottom: 26.2%;
 nav a:hover
 {
 transition: background-color 0.2s ease-in;
+transition: color 0.2s ease-in;
 background-color: #333;
+color: #999;
 }
 
 .fixed
@@ -757,20 +760,19 @@ padding-bottom: 26.2%;
 .l4_titles
 {
 position: absolute;
-top: 0;
+top: 13%;
 width: 100%;
+height: 10%;
 }
 
 .l4_titles ul
 {
 width: 100%;
-height: auto;
 }
 
 .l4_titles li
 {
 width: 49.7%;
-background-color: blue;
 text-align: center;
 display: inline-block;
 font-size: 2.5vw;
@@ -778,13 +780,27 @@ font-family: michroma;
 color: #f8be78;
 }
 
-.offset
-{
-margin-top: 
-visibility: none;
-width: 100%;
-height: 18%;
-top: 0;
+.offset:before
+{ 
+display: block; 
+content: " ";
+height: 10%;      
+margin-top: -10%;	
+visibility: hidden;
+}
+
+@-webkit-keyframes move_down{
+	0%{}
+	10%{}
+	20%{}
+	30%{}
+	40%{}
+	50%{}
+	60%{}
+	70%{}
+	80%{}
+	90%{}
+	100%{}
 }
 /*=========LAYER 4 END===========*/
 
@@ -795,23 +811,25 @@ position: absolute;
 top: 25%;
 width: 100%;
 height: 25%;
-background-color: green;
 }
 
 #hardware
 {
-top: 10%;
+position: absolute;
+top: 0;
 width: 50%;
-height: 90%;
+height: 100%;
 }
 
 #hardware img
 {
-
+position: absolute;
+display: none;
 }
 
 #hardware_content
 {
+position: absolute;
 font-family: michroma;
 font-size: 2.5vw;
 color: #f8be78;
@@ -819,23 +837,26 @@ color: #f8be78;
 
 #software
 {
-top: 10%;
+position: absolute;
+top: 0;
 width: 50%;
-height: 90%;
+height: 100%;
 margin-left: 50%;
 }
+
 #software img
 {
-
+position: absolute;
+display: none;
 }
 
 #software_content
 {
+position: absolute;
 font-family: michroma;
 font-size: 2.5vw;
 color: #f8be78;
 }
-
 /*=========LAYER 4_1 END===========*/
 
 /*=========LAYER 4_2 ===========*/
@@ -845,23 +866,25 @@ position: absolute;
 top: 50%;
 width: 100%;
 height: 25%;
-background-color: red;
 }
 
 #laptop
 {
-top: 10%;
+position: absolute;
+top: 0;
 width: 50%;
-height: 90%;
+height: 100%;
 }
 
 #laptop img
 {
-
+position: absolute;
+display: none;
 }
 
 #laptop_content
 {
+position: absolute;
 font-family: michroma;
 font-size: 2.5vw;
 color: #f8be78;
@@ -869,19 +892,22 @@ color: #f8be78;
 
 #desktop
 {
-top: 10%;
+position: absolute;
+top: 0;
 width: 50%;
-height: 90%;
+height: 100%;
 margin-left: 50%;
 }
 
 #desktop img
 {
-
+position: absolute;
+display: none;
 }
 
 #desktop_content
 {
+position: absolute;
 font-family: michroma;
 font-size: 2.5vw;
 color: #f8be78;
