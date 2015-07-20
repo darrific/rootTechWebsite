@@ -1,0 +1,15 @@
+Open-Internet text.
+
+1. First page must have the following: 
+	a. Background colour.
+	b. One hyperlink to [Page 2].
+	c. One jquery that, on click, opens a HIDDEN div filled with text on  the page.
+	d. An UNORDERED LIST consisting of  3 list elements, each of which consists of an image, with the 
+	   final result showing the three images centered in the page. 
+	e. All links must change colour on mouse hover.
+2. Second page muct have the following:
+	a. Background radial gradient (colour of your choice)
+	b. A hyperlink back to [Page 1].
+	c. SVG hyperlinks to facebook, and twitter.
+ALL ELEMENTS MUST BE APPROPRIATELY POSITIONED, USING COLOURS AND FONTS AS YOU PLEASE. 
+DEFAULT FONTS NOT ALLOWED. 
