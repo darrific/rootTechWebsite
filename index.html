@@ -11,9 +11,6 @@
 
 <title>Root Tech</title>
 
-<audio id="drama" src="media/drama.mp3"></audio>
-<audio src="media/ooo.mp3" id="ouu"></audio>
-
 <body>
 	<!-- ++++++++LAYER 1 Darrien and KCB+++++++ -->
 	<div id="layer_1">
@@ -201,12 +198,12 @@
 	
 <!--++++++++LAYER 4 +++++++-->
 	<div id="layer_4">
-		<div id="layer4_title"> Our pc services include</div>
+		<div id="layer4_title"> PC SERVICES </div>		
 		<nav>	
 			<ul>
-				<li><a href="#" id="repairs_button">Repairs</a></li>
-				<li><a href="#" id="upgrades_button">Upgrades</a></li>
-				<li><a href="#" id="req_services">Request Our Services</a></li>
+				<li><a href="#layer_4_1" id="repairs_button">REPAIRS</a></li>
+				<li><a href="#layer_4_2" id="upgrades_button">UPGRADES</a></li>
+				<li><a href="#" id="req_services">REQUEST OUR SERVICES</a></li>
 			</ul>
 		</nav>		
 		
@@ -214,25 +211,25 @@
 
 	<!--++++++++LAYER 4_1 +++++++-->
 	<div id="layer_4_1">		
-			<div class="l4_titles">
-				<ul>
-					<li>HARDWARE</li>
-					<li>SOFTWARE</li>
-				</ul>
-			</div>
-			<div id="hardware">
-				<img src="images/hardware.jpg" alt=":(">
-				<div id="hardware_content">
-					
-				</div>
-			</div>
-			<div id="software">
-				<img src="images/software.png" alt=":(">
-				<div id="software_content">
-					
-				</div>
+		<div class="l4_titles">
+			<ul>
+				<li>HARDWARE</li>
+				<li>SOFTWARE</li>
+			</ul>
+		</div>
+		<div id="hardware">
+			<img src="images/hardware.jpg" alt=":(">
+			<div id="hardware_content">
+				
 			</div>
 		</div>
+		<div id="software">
+			<img src="images/software.png" alt=":(">
+			<div id="software_content">
+				
+			</div>
+		</div>		
+	</div>
 	<!--++++++++LAYER 4_1 END+++++++-->
 
 	<!--++++++++LAYER 4_2 +++++++-->
@@ -357,7 +354,7 @@
 
 			//LAYER_2_1 JS
 			$("#req_web_button").click(function(){
-			$("#laymnmner_2_1").fadeOut(100);// Actual values are: 1k,2k,1k
+			$("#layer_2_1").fadeOut(100);// Actual values are: 1k,2k,1k
 			$("#layer_2_2").fadeIn(1000);
 			});
 			//END LAYER_2_1 JS
@@ -398,7 +395,8 @@
 					$("nav").addClass("fixed");
 					$("nav a").addClass("fixed2");
 					$("nav a").removeClass("fixed3");
-					$("#layer4_title").fadeOut(50);					
+					$("#layer4_title").fadeOut(50);
+					$("#layer4_title").css('display','none');									
 				} else {
 					$("nav").removeClass("fixed");
 					$("nav a").removeClass("fixed2");
@@ -407,9 +405,14 @@
 				}
 			});
 
-			$("#repairs_button").click(function(){
-				$('body').scrollTo("#layer_4_1")
-			});
+			$('a[href^="#"]').on('click', function(event) {
+
+    			var target = $( $(this).attr('href') );
+
+    			if( target.length ) {
+        			event.preventDefault();
+        			$('html, body').animate({scrollTop: target.offset().top}, 1000);}
+				});
 			//END LAYER_4 JS
 
 			//LAYER_4_1 JS
