@@ -80,12 +80,12 @@
 
 @font-face {
     font-family: 'bebaslight';
-    src: url('fonts/bebaslight-webfont.eot');
-    src: url('fonts/bebaslight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/bebaslight-webfont.woff2') format('woff2'),
-         url('fonts/bebaslight-webfont.woff') format('woff'),
-         url('fonts/bebaslight-webfont.ttf') format('truetype'),
-         url('fonts/bebaslight-webfont.svg#bebas_neuelight') format('svg');
+    src: url('fonts/bebas/light/bebaslight-webfont.eot');
+    src: url('fonts/bebas/light/bebaslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebas/light/bebaslight-webfont.woff2') format('woff2'),
+         url('fonts/bebas/light/bebaslight-webfont.woff') format('woff'),
+         url('fonts/bebas/light/bebaslight-webfont.ttf') format('truetype'),
+         url('fonts/bebas/light/bebaslight-webfont.svg#bebas_neuelight') format('svg');
     font-weight: normal;
     font-style: normal;
 

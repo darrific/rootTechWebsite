@@ -431,13 +431,13 @@
 		        clearInterval(interval);
 		        if (counter === 0){
 		        	$("#slider_container ul").animate({'margin-left': -(width*ide)}, animation_speed);
-		        	$("#el0").css('color','black');
+		        	$("#el0").css('color','#3d3d3d');
 		        	$("#"+current_id).css('color','#f8be73');
 		        	arr.push(current_id);
 		        	counter++;
 		        }else{
 		        	$("#slider_container ul").animate({'margin-left': -(width*ide)}, animation_speed);
-		        	$("#"+arr[who]).css('color','black');
+		        	$("#"+arr[who]).css('color','#3d3d3d');
 		        	$("#"+current_id).css('color','#f8be73');
 		        	arr.push(current_id);
 		        	counter++;
