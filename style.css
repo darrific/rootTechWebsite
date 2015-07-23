@@ -198,27 +198,6 @@ fill: #f8be78;
 fill: #64D448;
 }
 
-#allahuakbar
-{
-display: none;
-}
-
-.mute_icon
-{
-position: absolute;
-top: 90%;
-left: 93%;
-width: 7%;
-height: 7%;
-fill: #f8be78;
-}
-
-.mute_icon:hover
-{
-fill: red;
-}
-
-
 /*=========LAYER 2 ===========*/
 #layer_2
 {
@@ -639,7 +618,7 @@ color: #555;
 #back_button
 {
 position: absolute;
-top: 1.5	%;
+top: 1.5%;
 left: 2%;
 }
 
@@ -736,11 +715,11 @@ font-weight: bold;
 font-family: bebaslight;
 cursor: url(Resources/cursors/sym: 57px;.cur), pointer;
 -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;	
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;	
 }
 
 
@@ -748,7 +727,7 @@ cursor: url(Resources/cursors/sym: 57px;.cur), pointer;
 .fix5
 {
 padding-left: 5%;
-color: black;
+color: #3d3d3d;
 }
 
 .fix5:hover
