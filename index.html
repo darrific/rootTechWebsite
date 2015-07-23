@@ -108,8 +108,7 @@
 				</g>
 			</svg>
 				
-		</div>	
-		<div id="serviceformclick">Click here!</div>
+		</div>
 		<div id="fancy_text" class="text_centerX">
 			
 		</div>
@@ -151,11 +150,11 @@
 			    <input id="submitEmail" class="serviceform_submit" type="submit" value="Submit">
 			</form>
 			</div>
-		<div id="services_buttons">		
-			<div id="contact_facebook">Facebook</div>
-			<div id="contact_whatsapp">WhatsApp</div>
-			<div id="whatsapp_number">356-9753</div>
-		</div>		
+			<div id="services_buttons">		
+				<div id="contact_facebook">Facebook</div>
+				<div id="contact_whatsapp">WhatsApp</div>
+				<div id="whatsapp_number">497-5118</div>
+			</div>		
 		</div>
 
 	<!--++++++++LAYER 2_2 END+++++++-->
@@ -186,7 +185,7 @@
 		<div id="about_image" ><img src="images/about_us_1.jpg" alt=":(">
 			<div id="flowery_about_container">
 				<div id="jared_flowery_text">
-					<p><cc>Root Technologies</cc> is an I.T. solutions company based in San Fernando, Trinidad and Tobago We are a group of young professionals, currently attending Naparima College at the Sixth Form level. We are experienced and highly trained, prepared to provide creative and innovative solutions to any of your ICT problems.</p>
+					<p>Root Technologies is an I.T. solutions company based in San Fernando, Trinidad and Tobago We are a group of young professionals, currently attending Naparima College at the Sixth Form level. We are experienced and highly trained, prepared to provide creative and innovative solutions to any of your ICT problems.</p>
 					<br>
 					<p>Several of our technicians are CompTIA A+ Certified, and have experience in network design for Homes, and Small Businesses. Others are proficient in web design, having done so as a hobby, and at an accredited examination level. Despite our age, we have been working with computers for years, and our combined knowledge surpasses many people in the field. We can provide a fresh take on old problems, apply creativity and innovation into our solutions and show our drive and determination in helping our clients.</p>
 					<br>
@@ -336,24 +335,6 @@
 
 			//END LAYER_1 JS
 
-			//MUTE JS
-			var click_count = 1;
-			var click_count2 = 0;
-			$(".mute_icon").click(function(){
-					if (click_count != click_count2)
-					{
-						$(".mute_icon").css('fill','red');
-						click_count2 = click_count;
-					}
-					else 
-					{
-						$(".mute_icon").css('fill','#f8be78');
-						click_count = 1;
-						click_count2 = 0;	
-					}
-				});
-			//END MUTE JS
-
 			//LAYER_2 JS
 
 			$("#web_dev").mouseenter(function(){
@@ -482,18 +463,39 @@
 				var scrollPos = $(window).scrollTop();
 
 				if (scrollPos >= navOffset) {
-					$("nav").addClass("fixed");
-					$("nav a").addClass("fixed2");
-					$("nav a").removeClass("fixed3");
+					$("nav").addClass("nav1");
+					$("nav a").addClass("nav2");
+					$("nav a").removeClass("nav3");
 					$("#layer4_title").fadeOut(50);
-					$("#layer4_title").css('display','none');									
+					$("#layer4_title").css('display','none');
 				} else {
-					$("nav").removeClass("fixed");
-					$("nav a").removeClass("fixed2");
-					$("nav a").addClass("fixed3");
-					$("#layer4_title").fadeIn(100);
+					$("nav").removeClass("nav1");
+					$("nav a").removeClass("nav2");
+					$("nav a").addClass("nav3");
+					$("#layer4_title").fadeIn(100);					
 				}
 			});
+
+			var repairsOffset = $("#layer_4_1").offset().top;
+			var upgradesOffset = $("#layer_4_2").offset().top;
+
+			$(window).scroll(function(){
+				var scrollPos2 = $(window).scrollTop();
+				var scrollPos3 = $(window).scrollTop();
+
+				if ((scrollPos2 >= repairsOffset) && (scrollPos3 < upgradesOffset)) {
+					$("#repairs_button").addClass("onrepairs");
+				} else {
+					$("#repairs_button").removeClass("onrepairs");
+				}
+
+				if (scrollPos3 >= upgradesOffset) {
+					$("#upgrades_button").addClass("onupgrades");
+				} else {
+					$("#upgrades_button").removeClass("onupgrades");
+				}
+
+			});			
 
 			$('a[href^="#"]').on('click', function(event) {
 

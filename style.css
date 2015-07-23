@@ -827,13 +827,13 @@ background-color: #333;
 color: #999;
 }
 
-.fixed
+.nav1
 {
 position: fixed;
 top: 0;
 }
 
-.fixed2
+.nav2
 {
 padding-top: 4.7%;
 padding-bottom: 4.7%;
@@ -841,7 +841,7 @@ padding-bottom: 4.7%;
 -webkit-transition: padding-bottom 0.12s ease-in;
 }
 
-.fixed3
+.nav3
 {
 padding-top: 26.2%;
 padding-bottom: 26.2%;
@@ -926,6 +926,12 @@ font-family: michroma;
 font-size: 2.5vw;
 color: #f8be78;
 }
+
+.onrepairs
+{
+color: #fff;
+-webkit-transition: color 0.2s ease-in;
+}
 /*=========LAYER 4_1 END===========*/
 
 /*=========LAYER 4_2 ===========*/
@@ -982,6 +988,11 @@ font-size: 2.5vw;
 color: #f8be78;
 }
 
+.onupgrades
+{
+color: #fff;
+-webkit-transition: color 0.2s ease-in;
+}
 /*=========LAYER 4_2 END===========*/
 
 /*=========LAYER 4_3 ===========*/
