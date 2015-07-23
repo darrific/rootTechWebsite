@@ -294,14 +294,20 @@ position: absolute;
 width: 100%;
 height: 100%;
 overflow: hidden;
-background: -webkit-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
+background: -webkit-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
+background: -moz-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -o-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -ms-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
 display: none; 
 }
 
 #B_Bl_Bo
 {
 position: absolute;
-background-color:-webkit-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
+background: -webkit-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
+background: -moz-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -o-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -ms-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
 top: 16%;
 left: 8% ;
 height: 47%;
@@ -371,7 +377,11 @@ position: absolute;
 width: 100%;
 height: 100%;
 z-index: -10;
-background: -webkit-radial-gradient(#23004e,#1b003d,#0d001d,#000000);
+background: -webkit-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
+background: -moz-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -o-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -ms-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
+overflow: hidden;
 }
 
 #layer_2_2
@@ -380,13 +390,14 @@ position: absolute;
 width: 100%;
 height: 100%;
 display: none;
+overflow: hidden;
 }
 
 #service_form_back
 {
 position:absolute;
 top:50%;
-left: 50%;
+left: 60%;
 transform: translate(-120% , -50%);
 width: 40%;
 height: 80%;
@@ -399,7 +410,7 @@ opacity: 0.75;
 {
 position:absolute;
 top:50%;
-left: 50%;
+left: 60%;
 transform: translate(-120% , -55%);
 width: 40%;
 height: 80%;
@@ -420,11 +431,10 @@ text-decoration: none;
 {
 position:absolute;
 text-align: left;
-top:50%;
-left: 50%;
+top: 30%;
+left: 6%;
 width: 100%;
 height: 100%;
-transform: translate(-44% , -22%);
 z-index: 6;
 }
 
@@ -507,72 +517,61 @@ text-align: center;
 #services_buttons
 {
 position: absolute;
-margin-top: -15%;
-right: 2%;
-width: 40%;
-height: 60%;
+margin-top: 20%;
+right: 1%;
+width: 37%;
+height: 62%;
+
 }
 
 #contact_facebook
 {
 position: absolute;
-width: 93%;
-height: 15%;
+width: 50%;
+height: 10%;
 color: #f8be78;
 background-color: #222;
 text-align: center;
 text-decoration: none;
-font-size: 3vw;
+font-size: 2vw;
 font-family: michroma;
-padding: 3%;
-border: solid;
-border-top-color: #999;
-border-right-color: #999;
-border-bottom-color: none; 
-border-left-color: none;
-border-radius: 5%;
+
+border: 2px solid #f8be78;
+border-radius: 5px;
 }
 
 #contact_whatsapp
 {
 position: absolute;
-width: 93%;
-height: 15%;
-margin-top: 40%;
+width: 50%;
+height: 10%;
+margin-top: 20%;
 color: #f8be78;
 background-color: #222;
 text-align: center;
 text-decoration: none;
-font-size: 3vw;
+font-size: 2vw;
 font-family: michroma;
-padding: 3%;
-border: solid;
-border-top-color: #999;
-border-right-color: #999;
-border-bottom-color: none; 
-border-left-color: none;
-border-radius: 5%;
+
+border: 2px solid #f8be73;
+border-radius: 5px;
 }
 
 #whatsapp_number
 {
 position: absolute;
-width: 93%;
-height: 15%;
-margin-top: 40%;
+width: 50%;
+height: 10%;
+margin-top: 20%;
 color: #f8be78;
 background-color: #222;
 text-align: center;
 text-decoration: none;
-font-size: 3vw;
+font-size: 2vw;
 font-family: michroma;
-padding: 3%;
-border: solid;
-border-top-color: #999;
-border-right-color: #999;
-border-bottom-color: none; 
-border-left-color: none;
-border-radius: 5%;
+
+border: 2px solid #f8be78;
+border-radius: 5px;
 display: none;
 }
 
@@ -583,7 +582,7 @@ display: none;
 {
 position: absolute;
 width: 100%;
-height: 100%;
+height: 200%;
 display: none;
 }
 
@@ -591,47 +590,17 @@ display: none;
 {
 position: absolute;
 width: 80%;
-height: 48%;
+height: 22%;
+margin-top: 13%;
+left: 10%;
 }
 
 #flowery_about_container
 {
-position: absolute;
-width: 60%;
-height: 100%;
-}
-
-#about_buttons
-{
-position: absolute;
-width: 50%;
-height: 20%;
-margin-top: 39.6%;
-}
-
-#about_buttons a 
-{
-position: absolute;
-width: 30%;
-color: white;
-background-color: #222;
-text-decoration: none;
-font-size: 3vw;
-font-family: bebasregular;
-padding: 5%;
-border-radius: 5px;
-}
-
-#about_team
-{
-position: absolute;
-margin-left: -45%;
-}
-
-#about_past
-{
-position: absolute;
-margin-left: 5%
+margin-top: -31.5%;
+width: 99%;
+height: 99%;
+overflow: hidden;
 }
 
 #about_header_1
@@ -639,8 +608,8 @@ margin-left: 5%
 position: absolute;
 margin-top: 2%;	
 margin-left: 10%;
-color: white;
-font-size: 2vw;
+color: #f8be73;
+font-size: 2.5vw;
 font-family: bebasregular;
 }
 
@@ -656,17 +625,121 @@ font-family: bebasregular;
 
 #jared_flowery_text
 {
-position: absolute;
-width: 150%;
 margin-left: 2%;
-color: black;
+color: #E6ECE5;
 font-size: 1.3vw;
 font-family: OpenSans-Regular;
+}
+
+cc
+{
+color: #555;
 }
 
 /*=========LAYER 3 END===========*/
 
 /*=========LAYER 3_1 ===========*/
+
+#layer_3_1
+{
+position: absolute;
+margin-top: 50%;
+width: 100%;
+height: 55%;
+background: -webkit-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
+background: -moz-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -o-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -ms-radial-gradient(#16182c,#131527,#0e0f1c,#05060b);
+}
+
+#slider_container
+{
+width: 916px;
+height: 515px;
+overflow: hidden;
+margin-top: 12%;
+margin-left: 25%;
+}
+
+#slider_container ul
+{
+display: block;
+width: 7328px;
+height: 515px;
+}
+
+#slider_container li
+{
+float: left;
+list-style-type: none;
+width: 916px;
+height: 515px;
+}
+
+#button_back a
+{
+position: absolute;
+width: 20%;
+height: 36%;
+top: 50%;
+transform: translate(0, -50%);
+}
+
+#button_forward a
+{
+position: absolute;
+width: 20%;
+height: 36%;
+top: 50%;
+left: 100%;
+transform: translate(-100%,-50%);
+}
+
+#little_things_container
+{
+position: absolute;
+width: 100%;
+height: 20%;
+overflow: hidden;
+
+}
+
+#little_things_container ul
+{
+margin-left: 28.4%;
+margin-top: 3%;
+}
+
+#little_things_container li
+{
+list-style-type: none;
+float: left;
+padding: 1%;
+font-size: 5vw;
+font-weight: bold;
+font-family: bebaslight;
+cursor: url(Resources/cursors/sym57.cur), pointer;
+-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;	
+}
+
+
+
+.fix5
+{
+padding-left: 5%;
+color: black;
+}
+
+.fix5:hover
+{
+color: #999;
+}
+
 /*=========LAYER 3_1 END===========*/
 
 /*=========LAYER 3_2 ===========*/
@@ -678,8 +751,11 @@ font-family: OpenSans-Regular;
 {
 width: 100%;
 height: 400%;
-background: -webkit-linear-gradient(#522900,#5C2E00,#663300,#754719,#291400,#331A00,#3D1F00,#472400,#522900,#5C2E00,#663300,#754719,#855C33,#94704D);
 position: absolute;
+background: -webkit-linear-gradient(#16182c,#131527,#0e0f1c,#05060b);
+background: -moz-linear-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -o-linear-gradient(#16182c,#131527,#0e0f1c,#05060b);	
+background: -ms-linear-gradient(#16182c,#131527,#0e0f1c,#05060b);
 }
 
 #layer4_title
@@ -698,7 +774,7 @@ nav
 position: absolute;
 text-align: center;
 background-color: #222;
-top: 7.5%;
+top: 7%;
 width: 100%;
 z-index: 500;
 }
@@ -729,8 +805,8 @@ padding-bottom: 26.2%;
 
 nav a:hover
 {
-transition: background-color 0.2s ease-in;
-transition: color 0.2s ease-in;
+-webkit-transition: background-color 2 s ease-in;
+-webkit-transition: color 0.2s ease-in;
 background-color: #333;
 color: #999;
 }
