@@ -65,7 +65,7 @@ text-align: center;
 #logo_div
 {
 position: absolute;
-height: 45%;
+height: 70%;
 transform: translate(-20%, -30%);
 text-align: center;
 font-size: 9vw;
@@ -91,7 +91,7 @@ display: none;
 {
 position: absolute;
 width: 100%;
-top: 400px;
+top: 77%;
 font-family: bebasbook;
 z-index: 2;
 display: none;
@@ -636,6 +636,22 @@ cc
 color: #555;
 }
 
+#back_button
+{
+position: absolute;
+top: 1.5	%;
+left: 2%;
+}
+
+.c_back_button
+{
+top: 2%;
+left: 2%;
+fill: #f8be78;
+width: 20%;
+height: 20%;
+}
+
 /*=========LAYER 3 END===========*/
 
 /*=========LAYER 3_1 ===========*/
@@ -718,7 +734,7 @@ padding: 1%;
 font-size: 5vw;
 font-weight: bold;
 font-family: bebaslight;
-cursor: url(Resources/cursors/sym57.cur), pointer;
+cursor: url(Resources/cursors/sym: 57px;.cur), pointer;
 -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
