@@ -7,12 +7,72 @@
 <link rel="stylesheet" type="text.css" href="fonts.css">
 <script type="text/javascript" src="jquery.js"></script>
 
-<title></title>
+<title>test</title>
 
 <head></head>
 
-<body></body>
+<body>
+      
+      <div id=" wrapper">
 
-<footer></footer>
+
+      <a href="#"> Hyperlink to page2</a>      	 
+
+          <button id="Button1"> Click Here</button>        
+  
+          <div id="hidden_text">
+          
+              <p> hidden text on page </p>
+          
+
+          </div>
+
+        <div id="list_container">
+               <ul>
+
+               	  <li class="listelement">  <img src="images/pic-6.jpg"  alt="image1"  /></li>
+                  <li class="listelement">  <img src="images/pic-7.jpg"   alt="image2"  /></li>
+               	  <li class="listelement">  <img src="images/pic-9.jpg"  alt="image3"  /></li>
+
+               </ul>
+        </div>	
+
+
+
+
+
+     </div>
+
+
+
+
+
+
+</body>
+
+<footer>
+     <script>
+
+       $(function(){
+         $("#Button1").on('click',function(){
+           $("#hidden_text").toggle();
+
+         });           
+
+
+
+       	});
+
+
+
+
+
+     </script>
+
+
+
+
+
+</footer>
 
 </html>
