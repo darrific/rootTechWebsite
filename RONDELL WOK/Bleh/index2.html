@@ -10,58 +10,41 @@
 <title>Root Tech</title>
 
 <body>
-
+  
 	<div id="layer_2">
 		<div id="fancy_text" class="text_centerX">
 			<div id="header_text" class="animated fadeInLeft">What <b>we</b> do</div>
 		</div>
-		<div id="container">
-			<div id="web_dev" class="option_layer_2">
-				<a href="#"><div class="text_middle" id="web_development">WEB DEVELOPMENT</div><img src="images/about1.jpg" alt="" id="blur_on_hover_1"><div class="extra_info" id="extra_info_1"><hr>Click here to see more</div></a>
-			</div>
-			<div id="pc" class="option_layer_2">
-				<a href="#"><div class="text_middle" id="pc_stuff">PC</div><img src="images/pc.jpg" alt=""id="blur_on_hover_2"><div class="extra_info" id="extra_info_2"><hr>Click here to see more</div></a>
-			</div>
-	</div> 
+		
+        <div class="grid" id="web_pc_container">
+					<figure class="effect-ruby">
+						<img src="images/13.jpg" alt="img13"/>
+						<figcaption>
+							<h2> <span>Web Development </span> </h2>
+							<p>Click here for more details</p>
+				            <a href="http://www.youtube.com">View more</a>
+						</figcaption>			
+					
+					
+					</figure>
+					<figure class="effect-ruby">
+						<img src="images/14.jpg" alt="img14"/>
+						<figcaption>
+							<h2> <span>PC</span></h2>
+							<p>Click here for more details</p>
+							<a href="HoverEffectIdeas/index2.html">View more</a>
+						</figcaption>			
+					</figure>
+				</div>
+			
+
+        </div> 		
 </body>
+
 
 <footer>
 	<script> //JAVASCRIPT- this makes the buttons do stuff
-		$(document).ready(function(){
-			
-			//LAYER_1 JS
-			$("#motto").fadeIn(100).delay(100).fadeOut(100);// Actual values are: 1k,2k,1k
-			$("#logo_div").delay(410).fadeIn(100);// Actual values are: 4.1k,1k
-			$("#menu_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
-			$("#media_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
-			$(".mute_icon").delay(441).fadeIn(150);// Actual values are: 4.1k,1.5k
-
-			$("#services").click(function(){
-				$("#motto").fadeOut(100);// Actual values are: 1k,2k,1k
-				$("#logo_div").fadeOut(100);// Actual values are: 4.1k,1k
-				$("#menu_div").fadeOut(150);// Actual values are: 4.1k,1.5k
-				$("#media_div").fadeOut(150);// Actual values are: 4.1k,1.5k
-				$("#layer_2_2").fadeIn(1000);
-			});	 
-
-			//END LAYER_1 JS
-
-			//MUTE JS
-			var click_count = 1;
-			var click_count2 = 0;
-			$(".mute_icon").click(function(){
-					if (click_count != click_count2)
-					{
-						$(".mute_icon").css('fill','red');
-						click_count2 = click_count;
-					}
-					else 
-					{
-						$(".mute_icon").css('fill','#f8be78');
-						click_count = 1;
-						click_count2 = 0;	
-					}
-				});
+		
 			//END MUTE JS
 
 				//LAYER_2 JS

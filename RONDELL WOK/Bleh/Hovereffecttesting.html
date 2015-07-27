@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="stylesheet" type="text/css" href="Hovereffecttesingstyle.css">
+<link rel="stylesheet" type="text.css" href="animate.css">
+<link rel="stylesheet" type="text.css" href="fonts.css">
+<script type="text/javascript" src="jquery.js"></script>
+
+<title>Root Tech</title>
+
+<body>
+    
+	<div class="grid">
+					<figure class="effect-ruby">
+						<img src="images/13.jpg" alt="img4" />
+						<figcaption>
+							<h2>Glowing <span>Ruby</span></h2>
+							<p>Ruby did not need any help. Everybody knew that.</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+		</div>	
+</body>
+
+
+<footer>
+	<script> //JAVASCRIPT- this makes the buttons do stuff
+		$(document).ready(function(){
+			
+			//LAYER_1 JS
+			$("#motto").fadeIn(100).delay(100).fadeOut(100);// Actual values are: 1k,2k,1k
+			$("#logo_div").delay(410).fadeIn(100);// Actual values are: 4.1k,1k
+			$("#menu_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
+			$("#media_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
+			$(".mute_icon").delay(441).fadeIn(150);// Actual values are: 4.1k,1.5k
+
+			$("#services").click(function(){
+				$("#motto").fadeOut(100);// Actual values are: 1k,2k,1k
+				$("#logo_div").fadeOut(100);// Actual values are: 4.1k,1k
+				$("#menu_div").fadeOut(150);// Actual values are: 4.1k,1.5k
+				$("#media_div").fadeOut(150);// Actual values are: 4.1k,1.5k
+				$("#layer_2_2").fadeIn(1000);
+			});	 
+
+			//END LAYER_1 JS
+
+			//MUTE JS
+			var click_count = 1;
+			var click_count2 = 0;
+			$(".mute_icon").click(function(){
+					if (click_count != click_count2)
+					{
+						$(".mute_icon").css('fill','red');
+						click_count2 = click_count;
+					}
+					else 
+					{
+						$(".mute_icon").css('fill','#f8be78');
+						click_count = 1;
+						click_count2 = 0;	
+					}
+				});
+			//END MUTE JS
+
+				//LAYER_2 JS
+				// END LAYER_2 JS
+
+				//LAYER_2_1 JS
+				//END LAYER_2_1 JS
+
+				//LAYER_2_2 JS
+				//END LAYER_2_2 JS
+
+				//LAYER_3 JS
+				//END LAYER_3 JS
+
+				//LAYER_3_1 JS
+				//END LAYER_3_1 JS
+
+				//LAYER_3_2 JS
+				//END LAYER_3_2 JS
+
+				//LAYER_4 JS
+				//END LAYER_4 JS
+
+				//LAYER_4_1 JS
+				//END LAYER_4_1 JS
+
+				//LAYER_4_2 JS
+				//END LAYER_4_2 JS
+
+				//LAYER_4_3 JS
+				//END LAYER_4_3 JS
+
+				//LAYER_5 JS
+				//END LAYER_5 JS
+
+				//OTHER JS
+					
+				//END OTHER	 JS
+			});		
+		</script>
+</footer>
+
+</html>
