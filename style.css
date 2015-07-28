@@ -297,7 +297,7 @@ display: none;
 
 .blur_image
 {
--webkit-filter: blur(0.3em);
+-webkit-filter: blur(0.5em);
 }
 
 
