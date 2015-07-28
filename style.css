@@ -662,8 +662,8 @@ font-family: bebasregular;
 
 #slider_container
 {
-width: 916px;
-height: 515px;
+width: 57em;
+height: 30em;
 overflow: hidden;
 margin-top: 17%;
 margin-left: 25%;
@@ -672,16 +672,16 @@ margin-left: 25%;
 #slider_container ul
 {
 display: block;
-width: 7328px;
-height: 515px;
+width: 456em;
+height: 30em;
 }
 
 #slider_container li
 {
 float: left;
 list-style-type: none;
-width: 916px;
-height: 515px;
+width: 57em;
+height: 30em;
 }
 
 #button_back a
