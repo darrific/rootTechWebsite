@@ -56,7 +56,7 @@ overflow: hidden;
 #logo_container
 {
 position: absolute;
-top: 50%;
+top: 45%;
 width: 40%;
 height: 60%;
 text-align: center;
@@ -65,13 +65,13 @@ text-align: center;
 #logo_div
 {
 position: absolute;
-left: 8%;
-height: 70%;
+margin-left: -2%;
+height: 40%;
 text-align: center;
 font-size: 9vw;
 z-index: 1;
-fill:#454656;
-stroke:#FFFFFF;
+fill:#333;
+stroke:#855C33;
 stroke-width:2;
 stroke-miterlimit:5;			
 display: none;
@@ -93,7 +93,7 @@ display: none;
 {
 position: absolute;
 width: 100%;
-top: 77%;
+top: 90%;
 font-family: bebasbook;
 z-index: 2;
 display: none;
@@ -857,7 +857,7 @@ padding-bottom: 26.2%;
 .l4_titles
 {
 position: absolute;
-top: 13%;
+top: 18%;
 width: 100%;
 height: 10%;
 }
@@ -876,6 +876,23 @@ font-size: 2.5vw;
 font-family: michroma;
 color: #f8be78;
 }
+
+.titles_of_titles
+{
+position: absolute;
+top: 10%;
+width: 100%;
+height: 15%;
+color: #855C33;
+font-size: 3vw;
+font-family: michroma;
+text-align: center;
+}
+
+#req_services
+{
+color: #f8bf98
+}
 /*=========LAYER 4 END===========*/
 
 /*=========LAYER 4_1 ===========*/
@@ -884,7 +901,7 @@ color: #f8be78;
 position: absolute;
 top: 25%;
 width: 100%;
-height: 25%;
+height: 37.5%;
 }
 
 #hardware
@@ -943,9 +960,9 @@ color: #fff;
 #layer_4_2
 {
 position: absolute;
-top: 50%;
+top: 62.5%;
 width: 100%;
-height: 25%;
+height: 37.5%;
 }
 
 #laptop
