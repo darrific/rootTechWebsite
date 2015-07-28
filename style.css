@@ -31,6 +31,36 @@ transform: translate(0%,-50%);
 text-align: center; 	
 }
 
+.back_button
+{
+position: absolute;
+top: 40px;
+left: 2%;
+}
+
+.c_back_button
+{
+fill: #f8be78;
+width: 20%;
+height: 20%;
+}
+
+#back_button_layer_2_1
+{
+position: absolute;
+}
+
+#back_button_layer_3
+{
+position: fixed;
+z-index: 100;
+}
+
+#back_button_layer_4
+{
+position: fixed;
+z-index: 100;
+}
 /*+++++++++ END OF DEFAULT CLASSES +++++++++*/
 
 #background
@@ -296,6 +326,7 @@ position: absolute;
 width: 100%;
 height: 100%;
 overflow: hidden;
+background: -webkit-radial-gradient();
 display: none;
 }
 
@@ -623,30 +654,14 @@ font-family: bebasregular;
 #jared_flowery_text
 {
 margin-left: 2%;
-color: #E6ECE5;
 font-size: 1.3vw;
 font-family: opensansregular;
+color: white;
 }
 
 cc
 {
 color: #555;
-}
-
-#back_button
-{
-position: absolute;
-top: 1.5%;
-left: 2%;
-}
-
-.c_back_button
-{
-top: 2%;
-left: 2%;
-fill: #f8be78;
-width: 20%;
-height: 20%;
 }
 
 /*=========LAYER 3 END===========*/
@@ -751,8 +766,6 @@ cursor: url(Resources/cursors/sym57.cur), pointer;
 -ms-user-select: none;
 user-select: none;	
 }
-
-
 
 .fix5
 {
