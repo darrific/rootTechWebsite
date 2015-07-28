@@ -155,10 +155,10 @@
 		</div>
 		<div id="container">
 			<div id="web_dev" class="option_layer_2">
-				<a href="#"><div class="text_middle">WEB DEVELOPMENT</div><img src="images/about1.jpg" alt="" id="blur_on_hover_1"></a>
+				<a href="#"><div class="text_middle">WEB DEVELOPMENT</div></a>
 			</div>
 			<div id="pc" class="option_layer_2">
-				<a href="#"><div class="text_middle">PC</div><img src="images/pc.jpg" alt=""id="blur_on_hover_2"></a>
+				<a href="#"><div class="text_middle">PC</div></a>
 			</div>
 		</div>
 	</div> 
@@ -385,29 +385,29 @@
 
 			//LAYER_2 JS
 
-			$("#web_dev").mouseenter(function(){
-				$("#blur_on_hover_1").css('-webkit-filter','blur(5px)');
-				$("#web_dev img").css('transform','scaleX(1.2)');
-				$("#web_dev img").css('transform','scaleY(1.2)');
-				$("#web_dev img").css('-webkit-transition','-webkit-filter 0.5s ease-in');
-			});
-			$("#web_dev").mouseleave(function(){
-				$("#blur_on_hover_1").css('-webkit-filter','blur(0px)');
-				$("#web_dev img").css('transform','scaleX(1.5)');
-				$("#web_dev img").css('transform','scaleY(1.5)');
-			});			
+			// $("#web_dev").mouseenter(function(){
+			// 	$("#blur_on_hover_1").css('-webkit-filter','blur(5px)');
+			// 	$("#web_dev img").css('transform','scaleX(1.2)');
+			// 	$("#web_dev img").css('transform','scaleY(1.2)');
+			// 	$("#web_dev img").css('-webkit-transition','-webkit-filter 0.5s ease-in');
+			// });
+			// $("#web_dev").mouseleave(function(){
+			// 	$("#blur_on_hover_1").css('-webkit-filter','blur(0px)');
+			// 	$("#web_dev img").css('transform','scaleX(1.5)');
+			// 	$("#web_dev img").css('transform','scaleY(1.5)');
+			// });			
 
-			$("#pc").mouseenter(function(){
-				$("#blur_on_hover_2").css('-webkit-filter','blur(5px)');
-				$("#pc img").css('transform','scaleX(1.2)');
-				$("#pc img").css('transform','scaleY(1.2)');
-				$("#pc img").css('-webkit-transition','-webkit-filter 0.5s ease-in');	
-			});
-			$("#pc").mouseleave(function(){
-				$("#blur_on_hover_2").css('-webkit-filter','blur(0px)');
-				$("#pc img").css('transform','scaleX(1.5)');
-				$("#pc img").css('transform','scaleY(1.5)');	
-			});
+			// $("#pc").mouseenter(function(){
+			// 	$("#blur_on_hover_2").css('-webkit-filter','blur(5px)');
+			// 	$("#pc img").css('transform','scaleX(1.2)');
+			// 	$("#pc img").css('transform','scaleY(1.2)');
+			// 	$("#pc img").css('-webkit-transition','-webkit-filter 0.5s ease-in');	
+			// });
+			// $("#pc").mouseleave(function(){
+			// 	$("#blur_on_hover_2").css('-webkit-filter','blur(0px)');
+			// 	$("#pc img").css('transform','scaleX(1.5)');
+			// 	$("#pc img").css('transform','scaleY(1.5)');	
+			// });
 
 			$("#web_dev").click(function(){
 				$("#layer_2").fadeOut(100);
