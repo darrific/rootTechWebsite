@@ -19,7 +19,7 @@
 			<div id="logo_div" class="animated fadeInUp">
 				<?xml version="1.0" encoding="utf-8"?>
 				<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="3.7em"
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="4.5em"
 					 height="3em" viewBox="0 0 439 234" style="enable-background:new 0 0 439 234;" xml:space="preserve">				
 				<g id="text">
 				</g>
@@ -258,7 +258,7 @@
 	<div id="about_header_1">Root Tech</div> <!-- to be replaced with official logo -->
 	<div id="about_header_2"><b>What</b> we do</div>
 	<div id="about_container" >
-		<div id="about_image" ><img src="images/about_us_1.jpg" alt=":(">
+		<div id="about_image" ><img class="about_img" src="images/about_us_1.jpg" alt=":(">
 			<div id="flowery_about_container">
 				<div id="jared_flowery_text">
 					<p>Root Technologies is an I.T. solutions company based in San Fernando, Trinidad and Tobago. We are a group of young professionals, currently attending Naparima College at the Sixth Form level. We are experienced and highly trained, prepared to provide creative and innovative solutions to any of your ICT problems.</p>
@@ -280,14 +280,14 @@
 		<div id="about_header_3"><b>Who</b> we are</div>
 		<div id="slider_container">
 			<ul>
-				<li><img src="images/1.jpg" alt=""></li>
-				<li><img src="images/2.jpg" alt=""></li>
-				<li><img src="images/3.jpg" alt=""></li>
-				<li><img src="images/4.jpg" alt=""></li>
-				<li><img src="images/1.jpg" alt=""></li>
-				<li><img src="images/2.jpg" alt=""></li>
-				<li><img src="images/3.jpg" alt=""></li>
-				<li><img src="images/4.jpg" alt=""></li>
+				<li><img class="about_img" src="images/1.jpg" alt=""></li>
+				<li><img class="about_img" src="images/2.jpg" alt=""></li>
+				<li><img class="about_img" src="images/3.jpg" alt=""></li>
+				<li><img class="about_img" src="images/4.jpg" alt=""></li>
+				<li><img class="about_img" src="images/1.jpg" alt=""></li>
+				<li><img class="about_img" src="images/2.jpg" alt=""></li>
+				<li><img class="about_img" src="images/3.jpg" alt=""></li>
+				<li><img class="about_img" src="images/4.jpg" alt=""></li>
 			</ul>
 		</div>
 		<div id="little_things_container">
@@ -343,8 +343,10 @@
 		
 
 	<!--++++++++LAYER 4_1 +++++++-->
-	<div id="layer_4_1">		
-		<div class="l4_titles">
+	<div id="layer_4_1">
+		<hr color="#855C33" size="6" width="100%">	
+		<div class="titles_of_titles">REPAIRS</div>
+		<div class="l4_titles">			
 			<ul>
 				<li>HARDWARE</li>
 				<li>SOFTWARE</li>
@@ -366,7 +368,8 @@
 	<!--++++++++LAYER 4_1 END+++++++-->
 
 	<!--++++++++LAYER 4_2 +++++++-->
-	<div id="layer_4_2">			
+		<div id="layer_4_2">			
+			<div class="titles_of_titles">UPGRADES</div>		
 			<div class="l4_titles">
 				<ul>
 					<li>LAPTOP</li>
@@ -504,7 +507,7 @@
 		
 
 			//configuration for layer_3_1
-			var width= 916;
+			var width= $(window).width() * 0.5;
 			var animation_speed= 500;
 			var pause= 5000;
 			var current_slide= 1;
@@ -545,7 +548,6 @@
 		        }
 		    });		
 
-		   
 			//END LAYER_3_1 JS
 
 			//LAYER_3_2 JS
