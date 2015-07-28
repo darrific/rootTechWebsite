@@ -589,6 +589,12 @@ margin-top: 13%;
 left: 10%;
 }
 
+.about_img
+{
+width: 100%;
+height: 100%;
+}
+
 #flowery_about_container
 {
 margin-top: -31.5%;
@@ -670,8 +676,8 @@ font-family: bebasregular;
 
 #slider_container
 {
-width: 57em;
-height: 30em;
+width: 50%;
+height: 48%;
 overflow: hidden;
 margin-top: 17%;
 margin-left: 25%;
@@ -680,7 +686,7 @@ margin-left: 25%;
 #slider_container ul
 {
 display: block;
-width: 456em;
+width: 800%;
 height: 30em;
 }
 
@@ -688,14 +694,7 @@ height: 30em;
 {
 float: left;
 list-style-type: none;
-width: 57em;
-height: 30em;
-}
-
-#slider_container img
-{
-width: 57em;
-height: 30em;
+width: 12.5%;
 }
 
 #button_back a
