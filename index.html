@@ -9,6 +9,9 @@
 
 <title>Root Tech</title>
 
+<audio id="drama" src="media/drama.mp3"></audio>
+<audio src="media/ooo.mp3" id="ouu"></audio>
+
 <body>
 	<!-- ++++++++LAYER 1 Darrien and KCB+++++++ -->
 	<div id="layer_1">
@@ -210,16 +213,28 @@
 		</div>	
 	</div>
 
-	<!--++++++++LAYER 3 END+++++++-->
-
 	<!--++++++++LAYER 3_1 +++++++-->
 	<!--++++++++LAYER 3_1 END+++++++-->
 
 	<!--++++++++LAYER 3_2 +++++++-->
 	<!--++++++++LAYER 3_2 END+++++++-->
 
-	<!--++++++++LAYER 4 +++++++-->
-	<!--++++++++LAYER 4 END+++++++-->
+<!--++++++++LAYER 3 END+++++++-->
+
+	
+<!--++++++++LAYER 4 +++++++-->
+	<div id="layer_4_hide">
+		<div id="layer_4">
+			<nav>	
+				<ul>
+					<li><a href="">Repairs</a></li>
+					<li><a href="">Custom Build</a></li>
+					<li><a href="">Upgrades</a></li>
+					<li><a href="">Request Our Services</a></li>
+				</ul>
+			</nav>
+		</div>	
+	</div>
 
 	<!--++++++++LAYER 4_1 +++++++-->
 	<!--++++++++LAYER 4_1 END+++++++-->
@@ -229,6 +244,10 @@
 
 	<!--++++++++LAYER 4_3 +++++++-->
 	<!--++++++++LAYER 4_3 END+++++++-->
+
+<!--++++++++LAYER 4 END+++++++-->
+
+	
 
 
 </body>
@@ -243,6 +262,9 @@
 			$("#menu_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
 			$("#media_div").delay(410).fadeIn(150);// Actual values are: 4.1k,1.5k
 			$(".mute_icon").delay(441).fadeIn(150);// Actual values are: 4.1k,1.5k
+			$("#layer_4").hide();
+			document.getElementById("drama").play()= true;
+			document.getElementById("drama").volume()= 0.2;
 			});
 
 			$("#services").click(function(){
@@ -259,6 +281,7 @@
 				$("#menu_div").fadeOut(150);// Actual values are: 4.1k,1.5k
 				$("#media_div").fadeOut(150);// Actual values are: 4.1k,1.5k
 				$("#layer_3").fadeIn(1000);
+
 			});
 
 			//END LAYER_1 JS
@@ -305,12 +328,18 @@
 				$("#pc img").css('transform','scaleX(1.5)');
 				$("#pc img").css('transform','scaleY(1.5)');	
 			});
+
+			$("#pc").click(function(){
+				$("#layer_2").fadeOut(100);
+				$("#layer_4").fadeIn(1000);
+				document.getElementById("ouu").play()= true;
+			});
 			// END LAYER_2 JS
 
 			//LAYER_2_1 JS
 			$("#serviceformclick").click(function(){
-			$("#layer_2").fadeOut(100);// Actual values are: 1k,2k,1k
-			$("#layer_2_2").fadeIn(1000);
+				$("#layer_2").fadeOut(100);// Actual values are: 1k,2k,1k
+				$("#layer_2_2").fadeIn(1000);
 			});
 			
 			//END LAYER_2_1 JS
@@ -335,6 +364,24 @@
 			//END LAYER_3_2 JS
 
 			//LAYER_4 JS
+
+			var navOffset = $("nav").offset().top;
+
+			$("nav").wrap('<div class="nav-placeholder"></div>');
+			$(".nav-placeholder").height($("nav").outerHeight());
+	
+				$(window).scroll(function(){
+					var scrollPos = $(window).scrollTop();
+
+					if (scrollPos >= navOffset) {
+						$("nav").addClass("fixed");
+						$("nav a").addClass("fixed_2");
+					} else {
+						$("nav").removeClass("fixed");
+						$("nav a").removeClass("fixed_2");
+					}
+				});	
+			
 			//END LAYER_4 JS
 
 			//LAYER_4_1 JS
