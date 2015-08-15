@@ -54,6 +54,8 @@ overflow: hidden;
 {
 position: absolute;
 width: 40%;
+height: 45%;
+background-color: red;
 left: 30%;	
 top: 20%;
 transform: translate(-20%, -30%);
