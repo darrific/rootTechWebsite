@@ -1,4 +1,0 @@
-1. No obtuse colours.
-2. Simplistic theme.
-3. Two buttons: bookings, aboutus.
-4. All subsequent pages follow the same theme.
