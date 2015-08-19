@@ -1,0 +1,125 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+
+/*+++++++++ DEFAULT CLASSES (DONT USE HEAVY GUNNING, JARED) +++++++++*/
+
+.text_middle
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.text_centerX
+{
+position: absolute;
+left: 50%;
+transform: translate(-50%, 0%);
+text-align: center;
+}
+
+.text_centerY
+{
+position: absolute;
+top: 50%;
+transform: translate(0%,-50%);
+text-align: center; 	
+}
+
+/*+++++++++ END OF DEFAULT CLASSES +++++++++*/
+
+/*=========LAYER 2 ===========*/
+#layer_2
+{
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #16182c;
+}
+
+#fancy_text
+{
+position: absolute;
+width: 50%;
+height: 20%;
+margin-top: 0%;
+}
+
+#header_text
+{	
+margin-top: 4%;
+font-family: neue;
+font-size: 5vw;
+color: white;		
+}
+
+#container
+{
+position: absolute;
+width: 100%;
+height: 55%;
+top:85%;
+transform:translate(-0%, -85%);
+}
+
+.option_layer_2
+{
+position: absolute;
+width: 20%;
+height: 70%;
+}
+
+#web_dev
+{
+position: absolute;
+margin-left: 25%;
+font-size: 4vw;
+overflow: hidden;
+}
+
+#pc
+{
+position: absolute;
+margin-left: 50%;
+font-size: 8vw;
+overflow: hidden;
+}
+
+.option_layer_2 a
+{
+text-decoration: none;
+color: white;
+font-family: bebasbold;
+z-index: 1;
+color: white;
+}
+
+.option_layer_2 img
+{
+position: absolute;
+z-index: -1	;
+width: 100%;
+height: 100%;
+}
+
+.extra_info
+{
+position: absolute;
+color: #fff;
+font-size: 2vw;
+font-family: sans-serif;
+top: 100%;
+}
+
+hr
+{
+height: 0;
+border-top: 10px solid #fff;
+}
+/*=========LAYER 2 END===========*/
+
