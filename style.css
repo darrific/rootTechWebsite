@@ -31,6 +31,36 @@ transform: translate(0%,-50%);
 text-align: center; 	
 }
 
+.back_button
+{
+position: absolute;
+top: 40px;
+left: 2%;
+}
+
+.c_back_button
+{
+fill: #f8be78;
+width: 20%;
+height: 20%;
+}
+
+#back_button_layer_2_1
+{
+position: absolute;
+}
+
+#back_button_layer_3
+{
+position: fixed;
+z-index: 100;
+}
+
+#back_button_layer_4
+{
+position: fixed;
+z-index: 100;
+}
 /*+++++++++ END OF DEFAULT CLASSES +++++++++*/
 
 #background
@@ -73,7 +103,7 @@ z-index: 1;
 fill:#333;
 stroke:#855C33;
 stroke-width:2;
-stroke-miterlimit:5;			
+stroke-linejoin: round;		
 display: none;
 }
 
@@ -239,8 +269,8 @@ height: 20%;
 position: absolute;
 width: 100%;
 height: 65%;
-top:80%;
-transform:translate(-0%, -80%);
+top:50%;
+transform:translate(-0%, -50%);
 }
 
 .option_layer_2
@@ -256,6 +286,7 @@ position: absolute;
 margin-left: 14%;
 font-size: 7vw;
 overflow: hidden;
+background-color: #333;
 }
 
 #pc
@@ -264,6 +295,8 @@ position: absolute;
 margin-left: 52%;
 font-size: 8vw;
 overflow: hidden;
+background-color: #333;
+
 }
 
 .option_layer_2 a
@@ -292,6 +325,7 @@ position: absolute;
 width: 100%;
 height: 100%;
 overflow: hidden;
+background: -webkit-radial-gradient();
 display: none;
 }
 
@@ -307,7 +341,6 @@ position: absolute;
 height: 100%;
 width:100%;
 }
-
 
 #web_title
 {
@@ -626,30 +659,14 @@ font-family: bebasregular;
 #jared_flowery_text
 {
 margin-left: 2%;
-color: #E6ECE5;
 font-size: 1.3vw;
 font-family: opensansregular;
+color: white;
 }
 
 cc
 {
 color: #555;
-}
-
-#back_button
-{
-position: absolute;
-top: 1.5%;
-left: 2%;
-}
-
-.c_back_button
-{
-top: 2%;
-left: 2%;
-fill: #f8be78;
-width: 20%;
-height: 20%;
 }
 
 /*=========LAYER 3 END===========*/
@@ -748,8 +765,6 @@ cursor: url(Resources/cursors/sym57.cur), pointer;
 user-select: none;	
 }
 
-
-
 .fix5
 {
 padding-left: 5%;
@@ -771,7 +786,7 @@ color: #999;
 #layer_4
 {
 width: 100%;
-height: 400%;
+height: 300%;
 position: absolute;
 background: -webkit-linear-gradient(#16182c,#131527,#0e0f1c,#05060b);
 background: -moz-linear-gradient(#16182c,#131527,#0e0f1c,#05060b);	
@@ -783,10 +798,10 @@ background: -ms-linear-gradient(#16182c,#131527,#0e0f1c,#05060b);
 {
 position: fixed;
 text-align: center;
-margin-top: -2%;
+margin-top: 2%;
 width: 100%;
 font-family: michroma;
-font-size: 8vw;
+font-size: 5vw;
 color: #f8be78;
 }
 
@@ -795,7 +810,7 @@ nav
 position: absolute;
 text-align: center;
 background-color: #222;
-top: 7%;
+top: 9%;
 width: 100%;
 z-index: 500;
 }
@@ -817,8 +832,8 @@ nav a
 text-align: center;
 display: block;
 text-decoration: none;
-font-family: michroma;
-font-size: 1.5vw;
+font-family: bebasbook;
+font-size: 3vw;
 color: #855C33;
 padding-top: 26.2%;
 padding-bottom: 26.2%;
@@ -899,7 +914,7 @@ color: #f8bf98
 #layer_4_1
 {
 position: absolute;
-top: 25%;
+top: 33.3%;
 width: 100%;
 height: 37.5%;
 }
